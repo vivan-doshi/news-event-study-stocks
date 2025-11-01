@@ -1,0 +1,109 @@
+# Experiment Configuration
+# Business News and Business Cycles Replication with EODHD
+
+project:
+  name: "EODHD News Event Study"
+  version: "1.0.0"
+  created: "2025-10-31"
+
+# Data Acquisition Settings
+data_acquisition:
+  api_source: "EODHD"
+  time_range:
+    start_date: "2019-01-01"
+    end_date: "2024-10-31"
+  markets:
+    - "US"
+  batch_size: 100
+  rate_limit_delay: 0.5  # seconds between API calls
+
+# Symbol Universe
+symbols:
+  index_tickers:
+    - "SPY.US"  # S&P 500 ETF
+  sector_etfs:
+    - "XLF.US"  # Financial
+    - "XLK.US"  # Technology
+    - "XLE.US"  # Energy
+    - "XLV.US"  # Healthcare
+    - "XLI.US"  # Industrials
+    - "XLY.US"  # Consumer Discretionary
+    - "XLP.US"  # Consumer Staples
+    - "XLU.US"  # Utilities
+    - "XLRE.US" # Real Estate
+    - "XLB.US"  # Materials
+    - "XLC.US"  # Communication Services
+  top_stocks_count: 100  # Top N stocks by market cap
+
+# Text Processing Settings
+text_processing:
+  language: "en"
+  min_text_length: 100
+  min_tokens_per_doc: 30
+  duplicate_similarity_threshold: 0.95
+  duplicate_window_days: 3
+
+# Vocabulary Settings
+vocabulary:
+  unigram_min_df: 0.001  # 0.1% of documents
+  bigram_min_df: 0.0005  # 0.05% of documents
+  max_vocab_size: 20000
+  min_token_length: 3
+
+# LDA Topic Modeling
+lda:
+  k_values: [50, 80, 120, 150, 180]
+  alpha: 1.0  # Document-topic prior
+  beta: 1.0   # Topic-word prior
+  iterations: 300
+  random_seed: 42
+  cv_folds: 10
+  online_batch_size: 128
+
+# Time Aggregation
+time_aggregation:
+  frequencies: ["daily", "monthly"]
+  aggregation_methods: ["mean", "length_weighted"]
+  smoothing_window: 3  # months for visualization
+
+# Predictive Models
+predictive_models:
+  target: "SPY.US"
+  forecast_horizon: 1  # months
+  train_window: 120  # months for expanding window
+  fixed_window: 60   # alternative fixed window
+  test_split: 0.3    # fraction for out-of-sample
+  lasso_cv_folds: 5
+  max_selected_topics: 10
+  transaction_cost_bps: 15  # basis points
+
+# VAR Model Settings
+var:
+  max_lags: 3
+  bootstrap_reps: 1000
+  irf_horizon: 12  # months
+  ordering: ["macro", "topics", "returns"]
+
+# Robustness Checks
+robustness:
+  vary_k: true
+  vary_weighting: true
+  vary_vocabulary: true
+  text_source_comparison: ["headline", "headline_summary", "full"]
+  alternative_models: ["elastic_net", "ridge"]
+
+# System Settings
+system:
+  random_seeds:
+    numpy: 42
+    sklearn: 42
+    python: 42
+  n_jobs: -1  # Use all CPU cores
+  verbose: true
+  log_level: "INFO"
+
+# Data Storage Formats
+storage:
+  use_parquet: true
+  compression: "snappy"
+  dtm_format: "sparse_npz"
