@@ -28,17 +28,31 @@ logger = logging.getLogger(__name__)
 class EODHDDataAcquisition:
     """Class for acquiring data from EODHD API"""
 
-    def __init__(self, config_path: str = "conf/experiment.yaml"):
+    def __init__(self, api_key: Optional[str] = None, config_path: str = "conf/experiment.yaml"):
         """Initialize data acquisition with configuration"""
         # Load environment variables
         load_dotenv()
-        self.api_key = os.getenv('EODHD_API_KEY')
+
+        # Use provided API key or get from environment
+        if api_key:
+            self.api_key = api_key
+        else:
+            self.api_key = os.getenv('EODHD_API_KEY')
+
         if not self.api_key:
             raise ValueError("EODHD_API_KEY not found in environment variables")
 
-        # Load configuration
-        with open(config_path, 'r') as f:
-            self.config = yaml.safe_load(f)
+        # Load configuration if path exists
+        if os.path.exists(config_path):
+            with open(config_path, 'r') as f:
+                self.config = yaml.safe_load(f)
+        else:
+            # Use default configuration if file not found
+            self.config = {
+                'data_acquisition': {
+                    'rate_limit_delay': 0.5
+                }
+            }
 
         self.base_url = "https://eodhd.com/api"
         self.rate_limit_delay = self.config['data_acquisition']['rate_limit_delay']
@@ -267,16 +281,16 @@ class EODHDDataAcquisition:
     def _log_statistics(self, df: pd.DataFrame):
         """Log statistics about the fetched news data"""
         stats = {
-            'total_articles': len(df),
-            'unique_sources': df['source'].nunique(),
+            'total_articles': int(len(df)),
+            'unique_sources': int(df['source'].nunique()),
             'date_range': f"{df['published_at'].min()} to {df['published_at'].max()}",
-            'articles_with_content': df['content'].notna().sum(),
-            'articles_with_sentiment': df['sentiment'].apply(lambda x: bool(x)).sum()
+            'articles_with_content': int(df['content'].notna().sum()),
+            'articles_with_sentiment': int(df['sentiment'].apply(lambda x: bool(x)).sum())
         }
 
         # Save statistics to log file
         with open("logs/data_acquisition_stats.json", 'w') as f:
-            json.dump(stats, f, indent=2)
+            json.dump(stats, f, indent=2, default=str)
 
         logger.info(f"Data acquisition statistics: {stats}")
 

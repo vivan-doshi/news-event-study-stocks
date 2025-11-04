@@ -1,0 +1,6 @@
+min_bigram_docs: 116
+min_unigram_docs: 233
+n_bigrams: 12030
+n_documents: 233755
+n_terms: 20000
+n_unigrams: 7970

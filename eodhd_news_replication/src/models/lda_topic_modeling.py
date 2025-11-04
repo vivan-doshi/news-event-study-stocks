@@ -61,7 +61,7 @@ class LDATopicModeling:
             learning_method=learning_method,
             max_iter=self.iterations,
             random_state=self.random_seed,
-            n_jobs=-1,
+            n_jobs=1,  # Use single thread to avoid pickling issues with large sparse matrices
             verbose=0
         )
 
@@ -286,7 +286,7 @@ class LDATopicModeling:
             batch_size=batch_size,
             max_iter=1,  # Single pass for online learning
             random_state=self.random_seed,
-            n_jobs=-1
+            n_jobs=1  # Use single thread to avoid pickling issues
         )
 
         # Train incrementally

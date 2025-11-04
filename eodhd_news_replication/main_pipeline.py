@@ -66,7 +66,7 @@ class NewsEventStudyPipeline:
                 return
 
         try:
-            acquisition = EODHDDataAcquisition(self.config_path)
+            acquisition = EODHDDataAcquisition(config_path=self.config_path)
 
             # Fetch news data
             logger.info("Fetching news data...")
@@ -95,7 +95,7 @@ class NewsEventStudyPipeline:
         logger.info("=" * 50)
 
         try:
-            preprocessor = TextPreprocessor(self.config_path)
+            preprocessor = TextPreprocessor(config_path=self.config_path)
             df_processed, vocabulary = preprocessor.process_pipeline()
 
             self.pipeline_state['steps_completed'].append('text_preprocessing')

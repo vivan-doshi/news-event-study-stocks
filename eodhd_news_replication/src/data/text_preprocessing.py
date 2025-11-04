@@ -199,62 +199,73 @@ class TextPreprocessor:
         # Convert published_at to datetime
         df['published_date'] = pd.to_datetime(df['published_at'])
 
-        # Sort by date
-        df = df.sort_values('published_date')
+        # Sort by date and reset index
+        df = df.sort_values('published_date').reset_index(drop=True)
 
-        # Create TF-IDF vectors for similarity comparison
-        vectorizer = TfidfVectorizer(max_features=1000)
+        # Simplified approach: remove exact duplicates first
+        initial_count = len(df)
+        df = df.drop_duplicates(subset=['cleaned_text'], keep='first')
+        logger.info(f"Removed {initial_count - len(df)} exact duplicates")
 
-        # Process in batches by time window
-        keep_indices = []
-        window_size = pd.Timedelta(days=self.duplicate_window)
-
-        for idx, row in df.iterrows():
-            # Get articles within the time window
-            window_start = row['published_date'] - window_size
-            window_end = row['published_date'] + window_size
-
-            window_mask = (df['published_date'] >= window_start) & \
-                         (df['published_date'] <= window_end)
-            window_df = df[window_mask]
-
-            if len(window_df) > 1:
-                # Calculate similarity
-                texts = window_df['cleaned_text'].fillna('')
-                if texts.str.len().sum() > 0:
-                    try:
-                        tfidf_matrix = vectorizer.fit_transform(texts)
-                        current_idx = window_df.index.get_loc(idx)
-
-                        # Calculate cosine similarity with other documents
-                        similarities = cosine_similarity(
-                            tfidf_matrix[current_idx:current_idx + 1],
-                            tfidf_matrix
-                        ).flatten()
-
-                        # Check if this is a duplicate
-                        is_duplicate = False
-                        for i, sim in enumerate(similarities):
-                            if i != current_idx and sim > self.duplicate_threshold:
-                                # Check if the similar document comes before
-                                if window_df.iloc[i].name < idx:
-                                    is_duplicate = True
-                                    break
-
-                        if not is_duplicate:
-                            keep_indices.append(idx)
-                    except:
-                        # If TF-IDF fails, keep the document
-                        keep_indices.append(idx)
+        # For large datasets, skip expensive near-duplicate detection
+        # or process in smaller batches
+        if len(df) > 50000:
+            logger.info("Large dataset detected, using simplified deduplication")
+            # Additional simple deduplication by title similarity
+            df['title_lower'] = df['title'].str.lower().str.strip()
+            # Check if 'symbol' column exists
+            if 'symbol' in df.columns:
+                df = df.drop_duplicates(subset=['title_lower', 'symbol'], keep='first')
             else:
-                keep_indices.append(idx)
+                df = df.drop_duplicates(subset=['title_lower'], keep='first')
+            df = df.drop(columns=['title_lower'])
+        else:
+            # Process smaller datasets with TF-IDF
+            logger.info("Processing with TF-IDF similarity...")
+            vectorizer = TfidfVectorizer(max_features=500, max_df=0.95)
 
-        # Keep only non-duplicate articles
-        df_deduped = df.loc[keep_indices]
+            try:
+                # Create TF-IDF matrix for all documents at once
+                texts = df['cleaned_text'].fillna('')
+                tfidf_matrix = vectorizer.fit_transform(texts)
 
-        logger.info(f"Removed {len(df) - len(df_deduped)} duplicate articles")
+                # Process in daily batches to find duplicates
+                df['date_only'] = df['published_date'].dt.date
+                keep_mask = pd.Series([True] * len(df))
 
-        return df_deduped
+                for date in df['date_only'].unique():
+                    date_mask = df['date_only'] == date
+                    date_indices = df[date_mask].index.tolist()
+
+                    if len(date_indices) <= 1:
+                        continue
+
+                    # Check similarity within the same day
+                    for i in range(len(date_indices)):
+                        if not keep_mask[date_indices[i]]:
+                            continue
+
+                        for j in range(i + 1, len(date_indices)):
+                            if not keep_mask[date_indices[j]]:
+                                continue
+
+                            similarity = cosine_similarity(
+                                tfidf_matrix[date_indices[i]:date_indices[i] + 1],
+                                tfidf_matrix[date_indices[j]:date_indices[j] + 1]
+                            )[0, 0]
+
+                            if similarity > self.duplicate_threshold:
+                                keep_mask[date_indices[j]] = False
+
+                df = df[keep_mask]
+                df = df.drop(columns=['date_only'])
+
+            except Exception as e:
+                logger.warning(f"TF-IDF deduplication failed: {e}, keeping all documents")
+
+        logger.info(f"After deduplication: {len(df)} documents remaining")
+
+        return df
 
     def build_vocabulary(self, df: pd.DataFrame) -> Dict[str, int]:
         """Build vocabulary from processed documents"""

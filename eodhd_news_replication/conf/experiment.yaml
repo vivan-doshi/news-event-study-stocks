@@ -10,8 +10,8 @@ project:
 data_acquisition:
   api_source: "EODHD"
   time_range:
-    start_date: "2019-01-01"
-    end_date: "2024-10-31"
+    start_date: "2023-01-01"
+    end_date: "2025-10-31"
   markets:
     - "US"
   batch_size: 100
@@ -33,7 +33,7 @@ symbols:
     - "XLRE.US" # Real Estate
     - "XLB.US"  # Materials
     - "XLC.US"  # Communication Services
-  top_stocks_count: 100  # Top N stocks by market cap
+  top_stocks_count: 10  # Top N stocks by market cap (reduced for demo)
 
 # Text Processing Settings
 text_processing:
@@ -52,13 +52,13 @@ vocabulary:
 
 # LDA Topic Modeling
 lda:
-  k_values: [50, 80, 120, 150, 180]
+  k_values: [50]  # Using K=50 as best value
   alpha: 1.0  # Document-topic prior
   beta: 1.0   # Topic-word prior
-  iterations: 300
+  iterations: 100  # Reduced iterations for faster convergence
   random_seed: 42
-  cv_folds: 10
-  online_batch_size: 128
+  cv_folds: 2  # Minimal CV for validation
+  online_batch_size: 256  # Increased batch size for faster processing
 
 # Time Aggregation
 time_aggregation:

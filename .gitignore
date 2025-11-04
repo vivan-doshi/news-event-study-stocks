@@ -1,0 +1,121 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# Data files (too large for git - 5.1GB)
+eodhd_news_replication/data/
+data/
+
+# Model outputs and checkpoints
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+models/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Environment variables
+.env
+*.env
+!example.env
+
+# Claude specific
+.claude/
+
+# Large data files
+*.parquet
+*.csv
+*.npz
+*.npy
+*.gz
+*.zip
+*.tar
+*.tar.gz
+
+# Exclude data directory but keep structure file if needed
+# Uncomment below if you want to track directory structure
+# !eodhd_news_replication/data/.gitkeep
+# !data/.gitkeep
+
+# Results and outputs (if generated)
+results/
+outputs/
+figures/
+plots/
+
+# Cache
+.cache/
+*.cache
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.hypothesis/
