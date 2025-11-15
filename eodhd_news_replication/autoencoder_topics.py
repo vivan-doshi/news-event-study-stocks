@@ -150,5 +150,5 @@ df[['news_article_id', 'year', 'broad_category']].head()
 # ================================================================
 # STEP 11: SAVE RESULTS
 # ================================================================
-df.to_csv("autoencoder_topic_output.csv", index=False)
-print("✅ Topic categories saved to 'autoencoder_topic_output.csv'")
+df.to_parquet("autoencoder_topic_output.parquet", index=False)
+print("✅ Topic categories saved to 'autoencoder_topic_output.parquet'")

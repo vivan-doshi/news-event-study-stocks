@@ -13,6 +13,8 @@ python-dotenv>=0.20.0
 # Text Processing
 nltk>=3.8.0
 scikit-learn>=1.2.0
+sentence_transformers
+tf-keras
 
 # Topic Modeling and ML
 gensim>=4.2.0  # Alternative to sklearn LDA if needed

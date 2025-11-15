@@ -429,8 +429,9 @@ for topic in PAPER_TOPICS.keys():
     output_df[f'is_{topic}'] = (df['paper_topic'] == topic).astype(int)
 
 # Save
-output_df.to_csv('paper_topics_output.csv', index=False)
-print("\n✅ Saved to 'paper_topics_output.csv'")
+#output_df.to_csv('paper_topics_output.csv', index=False)
+output_df.to_parquet('paper_topics_output.parquet', index=False)
+print("\n✅ Saved to 'paper_topics_output.parquet'")
 
 # Save topic mapping
 topic_summary = pd.DataFrame({
