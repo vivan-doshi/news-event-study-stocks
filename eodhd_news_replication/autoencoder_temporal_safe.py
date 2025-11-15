@@ -427,9 +427,9 @@ output_df = df[[
 for i in range(latent_dim):
     output_df[f'latent_feature_{i}'] = latent_features[:, i]
 
-# Save to CSV
-output_file = "autoencoder_temporal_safe_output.csv"
-output_df.to_csv(output_file, index=False)
+# Save to Parquet
+output_file = "autoencoder_temporal_safe_output.parquet"
+output_df.to_parquet(output_file, index=False)
 print(f"   ✅ Results saved to '{output_file}'")
 
 # Save model
