@@ -38,7 +38,7 @@ N_TOPICS = 50
 # Path to a fine-tuned ChronoBERT sentiment model
 # (run training once using the train_chronobert_sentiment() function below,
 # or point this to any compatible HF path).
-SENTIMENT_MODEL_DIR = "./chrono-sentiment-v1"
+SENTIMENT_MODEL_DIR = "ProsusAI/finbert"
 
 # Maximum sequence length and batch sizes
 MAX_LENGTH = 256
@@ -156,6 +156,7 @@ class ChronoBERTEncoder:
             df_out: df with extra columns: 'chrono_model', 'text_for_nlp'
         """
         df = df.copy()
+        df = df.reset_index(drop=True)
         df["published_at"] = pd.to_datetime(df["published_at"])
 
         # choose ChronoBERT checkpoint for each row
@@ -285,25 +286,33 @@ def train_chronobert_sentiment(sent_train_df: pd.DataFrame,
 
 class ChronoBERTSentimentScorer:
     """
-    Wraps a fine-tuned ChronoBERT sentiment classifier.
+    Wraps a sentiment classifier.
 
     Assumes label order:
         0 = negative
         1 = neutral
         2 = positive
+
+    Works with:
+        - a local fine-tuned directory, OR
+        - a Hugging Face hub model name (e.g. "ProsusAI/finbert").
     """
 
     def __init__(self, model_dir: str):
-        if not os.path.isdir(model_dir):
-            raise ValueError(
-                f"Sentiment model directory '{model_dir}' does not exist. "
-                f"Train it first with train_chronobert_sentiment(), or change SENTIMENT_MODEL_DIR."
-            )
+        # REMOVE the os.path.isdir(...) check block above
 
         print(f"Loading sentiment model from: {model_dir}")
+        # ADD: load tokenizer and model directly from HF/local
         self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_dir).to(device)
         self.model.eval()
+
+        # (optional, just prints mapping so you can verify labels)
+        try:  # ADD (optional)
+            config = self.model.config
+            print("Sentiment model id2label:", getattr(config, "id2label", None))
+        except Exception:
+            pass
 
     def score(self, texts, batch_size: int = 32, max_length: int = 256):
         """
@@ -378,7 +387,7 @@ def main():
     df_emb[["sent_neg", "sent_neu", "sent_pos"]] = sentiment_probs
 
     # Continuous index: pos minus neg
-    df_emb["sentiment_chronobert"] = df_emb["sent_pos"] - df_emb["sent_neg"]
+    df_emb["sentiment_finbert"] = df_emb["sent_pos"] - df_emb["sent_neg"]
 
     # ---- 5. Clean up vendor sentiment name (optional) ----
     if "sentiment" in df_emb.columns:
@@ -396,7 +405,7 @@ def main():
         "sent_neg",
         "sent_neu",
         "sent_pos",
-        "sentiment_chronobert",
+        "sentiment_finbert",
     ])
 
 
