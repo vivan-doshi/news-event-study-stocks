@@ -40,13 +40,13 @@ env/
 
 # Logs
 *.log
-logs/
+/logs/
 *.out
 *.err
 
 # Data files (too large for git - 5.1GB)
 eodhd_news_replication/data/
-data/
+/data/
 
 # Model outputs and checkpoints
 *.pkl
@@ -56,7 +56,7 @@ data/
 *.pth
 *.pt
 *.ckpt
-models/
+/models/
 
 # Temporary files
 *.tmp
@@ -87,8 +87,8 @@ tmp/
 # !data/.gitkeep
 
 # Results and outputs (if generated)
-results/
-outputs/
+/results/
+/outputs/
 figures/
 plots/
 

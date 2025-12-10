@@ -1,0 +1,7 @@
+{
+  "input_documents": 284051,
+  "output_documents": 233755,
+  "vocabulary_size": 20000,
+  "avg_tokens_per_doc": 404.2283972535347,
+  "avg_bigrams_per_doc": 403.2283972535347
+}

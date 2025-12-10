@@ -1,0 +1,8 @@
+{
+  "n_documents": 233755,
+  "n_terms": 20000,
+  "n_nonzero": 66787491,
+  "sparsity": 0.9857142112468182,
+  "avg_terms_per_doc": 487.43697461016876,
+  "avg_docs_per_term": 5697.0415
+}

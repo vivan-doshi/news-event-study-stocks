@@ -13,23 +13,35 @@ from pathlib import Path
 import yaml
 import json
 
-# Add src directory to path
-sys.path.append(str(Path(__file__).parent / "src"))
+import sys
+import os
+import logging
+import argparse
+from datetime import datetime
+from pathlib import Path
+import yaml
+import json
+
+# Add src directory to path (so we can import core)
+sys.path.append(str(Path(__file__).parent))
 
 # Import pipeline modules
-from src.data.data_acquisition import EODHDDataAcquisition
-from src.data.text_preprocessing import TextPreprocessor
-from src.data.document_term_matrix import build_dtm_pipeline
-from src.models.lda_topic_modeling import run_lda_pipeline
-from src.analysis.time_aggregation import run_time_aggregation_pipeline
-from src.models.predictive_models import run_predictive_models_pipeline
+from core.data.data_acquisition import EODHDDataAcquisition
+from core.data.text_preprocessing import TextPreprocessor
+from core.data.document_term_matrix import build_dtm_pipeline
+from core.models.lda_topic_modeling import run_lda_pipeline
+from core.analysis.time_aggregation import run_time_aggregation_pipeline
+from core.models.predictive_models import run_predictive_models_pipeline
 
 # Set up logging
+log_dir = Path("data/outputs/logs")
+log_dir.mkdir(parents=True, exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(f'logs/pipeline_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
+        logging.FileHandler(f'{log_dir}/pipeline_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
         logging.StreamHandler()
     ]
 )
@@ -39,7 +51,7 @@ logger = logging.getLogger(__name__)
 class NewsEventStudyPipeline:
     """Main pipeline orchestrator for news event study"""
 
-    def __init__(self, config_path: str = "conf/experiment.yaml"):
+    def __init__(self, config_path: str = "config/experiment.yaml"):
         """Initialize pipeline with configuration"""
         self.config_path = config_path
         with open(config_path, 'r') as f:
@@ -196,15 +208,15 @@ class NewsEventStudyPipeline:
         # Data summary
         try:
             # Check for processed data
-            if Path("data/clean/news_clean.parquet").exists():
+            if Path("data/processed/news_clean.parquet").exists():
                 import pandas as pd
-                df = pd.read_parquet("data/clean/news_clean.parquet")
+                df = pd.read_parquet("data/processed/news_clean.parquet")
                 report['data_summary']['n_documents'] = len(df)
                 report['data_summary']['date_range'] = f"{df['published_at'].min()} to {df['published_at'].max()}"
 
             # Check for DTM
-            if Path("logs/dtm_stats.json").exists():
-                with open("logs/dtm_stats.json", 'r') as f:
+            if Path("data/outputs/logs/dtm_stats.json").exists():
+                with open("data/outputs/logs/dtm_stats.json", 'r') as f:
                     report['data_summary']['dtm_stats'] = json.load(f)
 
         except Exception as e:
@@ -213,14 +225,14 @@ class NewsEventStudyPipeline:
         # Model summary
         try:
             # LDA results
-            model_dirs = list(Path("models").glob("lda_k=*/metrics.json"))
+            model_dirs = list(Path("data/outputs/models").glob("lda_k=*/metrics.json"))
             if model_dirs:
                 with open(model_dirs[0], 'r') as f:
                     report['model_summary']['lda'] = json.load(f)
 
             # VAR results
-            if Path("results/var_summary.json").exists():
-                with open("results/var_summary.json", 'r') as f:
+            if Path("data/outputs/results/var_summary.json").exists():
+                with open("data/outputs/results/var_summary.json", 'r') as f:
                     report['model_summary']['var'] = json.load(f)
 
         except Exception as e:
@@ -228,15 +240,15 @@ class NewsEventStudyPipeline:
 
         # Results summary
         try:
-            if Path("results/trading_performance.json").exists():
-                with open("results/trading_performance.json", 'r') as f:
+            if Path("data/outputs/results/trading_performance.json").exists():
+                with open("data/outputs/results/trading_performance.json", 'r') as f:
                     report['results_summary']['trading'] = json.load(f)
 
         except Exception as e:
             logger.warning(f"Error loading results summary: {e}")
 
         # Save report
-        report_file = f"results/pipeline_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        report_file = f"data/outputs/results/pipeline_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(report_file, 'w') as f:
             json.dump(report, f, indent=2)
 
@@ -304,7 +316,7 @@ class NewsEventStudyPipeline:
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description='EODHD News Event Study Pipeline')
-    parser.add_argument('--config', type=str, default='conf/experiment.yaml',
+    parser.add_argument('--config', type=str, default='config/experiment.yaml',
                        help='Path to configuration file')
     parser.add_argument('--skip-data-acquisition', action='store_true',
                        help='Skip data acquisition if raw data exists')
