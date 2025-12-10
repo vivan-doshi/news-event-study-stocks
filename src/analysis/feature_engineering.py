@@ -200,6 +200,23 @@ def feature_engineering_main(news_path, stock_path, map_path, output_path):
     # Logic: df[cols].replace(0, np.nan).mean(axis=1)
     finbert_cols = [c for c in final_df.columns if c.startswith('sentiment_finbert_')]
     final_df['day_sentiment'] = final_df[finbert_cols].replace(0, np.nan).mean(axis=1)
+
+    # --- NEW: Enhanced Features ---
+    print("Adding enhanced features (lags, interactions)...")
+    
+    # Sort by symbol and date to ensure lags are correct
+    final_df = final_df.sort_values(by=['symbol_query', 'final_date_for_news'])
+    
+    # Lags for day_sentiment
+    final_df['day_sentiment_lag1'] = final_df.groupby('symbol_query')['day_sentiment'].shift(1)
+    final_df['day_sentiment_lag2'] = final_df.groupby('symbol_query')['day_sentiment'].shift(2)
+    final_df['day_sentiment_lag3'] = final_df.groupby('symbol_query')['day_sentiment'].shift(3)
+    
+    # Interaction: Sentiment * Volume
+    # Weight sentiment by how much news there is. 
+    # Log volume + 1 to avoid massive scale differences? 
+    # Or just raw volume. Let's try raw first as requested.
+    final_df['interaction_sentiment_volume'] = final_df['day_sentiment'] * final_df['total_news']
     
     # 6. Save
     print(f"Saving aggregated data to {output_path}...")

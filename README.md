@@ -85,7 +85,10 @@ python src/run_analysis.py --stage event_study --symbol GOOGL.US,AAPL.US
 4.  **Merging**: joins aggregated news features with daily stock returns (`adj_close`).
 
 ### Event Study (OLS Regression)
-*   **Model**: Regresses next-day stock price (derived from `adj_close`) against daily sentiment scores across various topics.
+*   **Model**: Regresses **next-day log return** (`ret_log_1d`) against:
+    *   Daily Sentiment (`day_sentiment`)
+    *   **Lagged Sentiment**: 1-day, 2-day, and 3-day lags.
+    *   **Interaction**: Sentiment × News Volume.
 *   **Validation**: Splits data into training (pre-June 2025) and testing sets.
 *   **Metrics**: Reports both **In-Fold R²** (Training set) and **Out-of-Fold R²** (Test set) to evaluate generalization.
     *   *Note: The cutoff date is currently set to '2025-06-01' matching the original study parameters.*

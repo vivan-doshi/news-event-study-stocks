@@ -24,10 +24,15 @@ FEATURES = [
     'sentiment_finbert_Market Movements & Trading News',
     'sentiment_finbert_Mergers, Acquisitions & Deals',
     'sentiment_finbert_Product News & Updates',
-    'sentiment_finbert_Semiconductor & Chip Industry News'
+    'sentiment_finbert_Semiconductor & Chip Industry News',
+    # Enhanced Features
+    'day_sentiment_lag1',
+    'day_sentiment_lag2',
+    'day_sentiment_lag3',
+    'interaction_sentiment_volume'
 ]
 
-TARGET = 'market_ret_log_1d' # Default, checking notebook logic used 'target_day_end_raw_close_next_day' in one cell but usually returns. 
+TARGET = 'target_return_next_day' 
 # Wait, checking inspect output: "target = 'target_day_end_raw_close_next_day'" in Cell 44.
 # But Cell 2 output showed 'ret_log_1d'.
 # Let's verify the target variable from the inspection output for OLS.
@@ -47,23 +52,38 @@ TARGET = 'market_ret_log_1d' # Default, checking notebook logic used 'target_day
 # I need to add target creation to `prepare_symbol_data` or `feature_engineering.py`.
 # Since `feature_engineering.py` is "common", and this target might be specific.
 # But the inspection showed "Uses global ... target".
-# Let's double check if I can find where `target` is defined or created.
+# Let's double check if I can find where`target` is defined or created.
 # If it's next day close, I can create it on the fly.
 
 def ensure_target_exists(df, target_col):
     if target_col in df.columns:
         return df
     
+    # Debug
+    # print(f"Target {target_col} not found. Available cols: {df.columns.tolist()}")
+
     # Try to construct it if it looks like a lag/lead
+    if target_col == 'target_return_next_day':
+        # Shift -1 on ret_log_1d (standard log returns)
+        if 'ret_log_1d' in df.columns:
+             df[target_col] = df['ret_log_1d'].shift(-1)
+        elif 'ret_1d' in df.columns:
+             df[target_col] = df['ret_1d'].shift(-1)
+        else:
+             print(f"Error: Could not find return source column for {target_col}")
+        return df
+    
+    # Legacy support or fallback
     if target_col == 'target_day_end_raw_close_next_day':
-        # Shift -1 on day_end_raw_close (or similar)
-        # Check standard columns
-        if 'day_end_raw_close' in df.columns:
-             df[target_col] = df['day_end_raw_close'].shift(-1)
-        elif 'day_end_value' in df.columns: # fallback
-             df[target_col] = df['day_end_value'].shift(-1)
-        elif 'adj_close' in df.columns: # found in data
+        # Prioritize adj_close as verified in data
+        if 'adj_close' in df.columns:
              df[target_col] = df['adj_close'].shift(-1)
+        elif 'day_end_raw_close' in df.columns:
+             df[target_col] = df['day_end_raw_close'].shift(-1)
+        elif 'day_end_value' in df.columns:
+             df[target_col] = df['day_end_value'].shift(-1)
+        else:
+             print(f"Error: Could not find source column for {target_col}")
         return df
     return df
 
@@ -202,7 +222,7 @@ def event_study_main(data_path, output_dir, symbols=None, target=None):
         symbols = symbols.split(',')
         
     if target is None:
-        target = 'target_day_end_raw_close_next_day'
+        target = TARGET # Use global default
 
     results_list = []
     
