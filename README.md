@@ -87,6 +87,7 @@ python src/run_analysis.py --stage event_study --symbol GOOGL.US,AAPL.US
 ### Event Study (OLS Regression)
 *   **Model**: Regresses next-day stock price (derived from `adj_close`) against daily sentiment scores across various topics.
 *   **Validation**: Splits data into training (pre-June 2025) and testing sets.
+*   **Metrics**: Reports both **In-Fold R²** (Training set) and **Out-of-Fold R²** (Test set) to evaluate generalization.
     *   *Note: The cutoff date is currently set to '2025-06-01' matching the original study parameters.*
 *   **Vizualization**: Generates "Actual vs. Predicted" and "Residuals" plots to assess model fit.
 

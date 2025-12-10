@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
+from sklearn.metrics import r2_score
 import os
 import argparse
 
@@ -174,10 +175,16 @@ def run_ols_for_symbol(df, symbol, output_dir, target_col='target_day_end_raw_cl
         plt.savefig(os.path.join(plots_dir, f'{symbol}_actual_vs_pred.png'))
         plt.close()
 
+    # Calculate Out-of-Fold R2
+    oos_r2 = np.nan
+    if len(y_test) > 0 and len(y_pred) > 0:
+        oos_r2 = r2_score(y_test, y_pred)
+
     return {
         'symbol': symbol,
         'n_obs': results.nobs,
-        'r2': results.rsquared,
+        'r2_in_fold': results.rsquared,      # In-sample R2
+        'r2_out_of_fold': oos_r2,           # Out-of-sample R2
         'adj_r2': results.rsquared_adj,
         'sigma_resid': np.sqrt(results.mse_resid) if results.mse_resid > 0 else 0,
         'params': results.params.to_dict(),
