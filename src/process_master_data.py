@@ -15,40 +15,33 @@ logger = logging.getLogger(__name__)
 MAG7_SYMBOLS = ['AAPL.US', 'MSFT.US', 'GOOGL.US', 'AMZN.US', 'META.US', 'NVDA.US', 'TSLA.US']
 LAGS = [1, 2, 5, 10, 21]
 
-def load_stock_data(file_path):
-    """Loads and preprocesses stock data."""
-    logger.info(f"Loading stock data from {file_path}...")
-    if file_path.endswith('.parquet'):
-        df = pd.read_parquet(file_path)
-    else:
-        df = pd.read_csv(file_path)
-
-    # Standardize columns
-    df.columns = [c.lower() for c in df.columns]
+def load_news_feature_data(file_path):
+    """Loads the aggregated news + stock features data."""
+    logger.info(f"Loading news & stock features from {file_path}...")
+    df = pd.read_parquet(file_path)
     
-    # Rename if needed (based on previous script logic)
+    # Standardize Column Names
+    # symbol_query -> symbol
     if 'symbol_query' in df.columns:
-        df = df.rename(columns={'symbol_query': 'symbol', 'adj_close': 'adjusted_close'})
+        df = df.rename(columns={'symbol_query': 'symbol'})
+        
+    # ret_log_1d -> log_ret
+    if 'ret_log_1d' in df.columns:
+        df = df.rename(columns={'ret_log_1d': 'log_ret'})
         
     df['date'] = pd.to_datetime(df['date'])
     df = df.sort_values(by=['symbol', 'date'])
     
-    # Filter Mag7
-    df = df[df['symbol'].isin(MAG7_SYMBOLS)]
+    # Ensure log_ret exists (calculate if missing but adj_close exists)
+    if 'log_ret' not in df.columns and 'adj_close' in df.columns:
+        logger.info("Calculating log returns...")
+        df['log_ret'] = df.groupby('symbol')['adj_close'].transform(lambda x: np.log(x / x.shift(1)))
     
-    # Calc Log Returns
-    logger.info("Calculating returns and lags...")
-    df['log_ret'] = df.groupby('symbol')['adjusted_close'].transform(lambda x: np.log(x / x.shift(1)))
-    
-    # Calc Lags
+    # Calculate Lagged Returns
+    logger.info("Calculating return lags...")
     for lag in LAGS:
         df[f'log_ret_lag{lag}'] = df.groupby('symbol')['log_ret'].shift(lag)
         
-    df = df.dropna(subset=['log_ret']) # Drop the first row where return is NaN
-    # Note: We keep rows with NaN lags for now (early dates), or drop?
-    # Usually consistent datasets drop valid rows. Let's keep them and let the analysis decide or drop if critical.
-    # The user wants "one file", so keeping as much data as possible is safer, analysis can dropna.
-    
     return df
 
 def load_factors(file_path):
@@ -88,34 +81,39 @@ def load_factors(file_path):
     return df
 
 def main():
-    stock_path = 'data/processed/mag7_yf_2021_2025.parquet'
+    # Input Paths
+    news_features_path = 'data/processed/mag7_aggregated_features.parquet'
     factors_path = 'reports/fama_french/data/fama_french_factors.csv'
-    output_dir = 'data'
     
-    # Create output dir if not exists (should exist)
+    # Output Paths
+    output_dir = 'data'
     os.makedirs(output_dir, exist_ok=True)
     
-    # 1. Load Stock
-    stock_df = load_stock_data(stock_path)
+    # 1. Load News + Stock Features
+    if not os.path.exists(news_features_path):
+        logger.error(f"News features file not found: {news_features_path}")
+        return
+        
+    master_df = load_news_feature_data(news_features_path)
     
     # 2. Load Factors
     factors_df = load_factors(factors_path)
     
     # 3. Merge
-    logger.info("Merging stock data and factors...")
-    # Merge on data. Stock has dates, Factors has dates.
-    # Inner join to keep only matching dates
-    master_df = pd.merge(stock_df, factors_df, on='date', how='inner')
+    logger.info("Merging news/stock data with Fama-French factors...")
+    # Merge on date.
+    final_df = pd.merge(master_df, factors_df, on='date', how='inner')
     
     # 4. Save
-    csv_path = os.path.join(output_dir, 'master_stock_data.csv')
-    parquet_path = os.path.join(output_dir, 'master_stock_data.parquet')
+    csv_path = os.path.join(output_dir, 'master_analysis_data.csv')
+    parquet_path = os.path.join(output_dir, 'master_analysis_data.parquet')
     
-    master_df.to_csv(csv_path, index=False)
-    master_df.to_parquet(parquet_path, index=False)
+    final_df.to_csv(csv_path, index=False)
+    final_df.to_parquet(parquet_path, index=False)
     
-    logger.info(f"Master dataset saved to:\n  {csv_path}\n  {parquet_path}")
-    logger.info(f"Columns: {list(master_df.columns)}")
+    logger.info(f"Master Analysis Dataset saved to:\n  {csv_path}\n  {parquet_path}")
+    logger.info(f"Shape: {final_df.shape}")
+    logger.info(f"Columns: {list(final_df.columns)}")
 
 if __name__ == "__main__":
     main()
