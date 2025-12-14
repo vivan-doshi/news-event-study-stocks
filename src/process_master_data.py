@@ -82,7 +82,7 @@ def load_factors(file_path):
 
 def main():
     # Input Paths
-    news_features_path = 'data/processed/mag7_aggregated_features.parquet'
+    news_features_path = 'data/processed/mag7_augmented_features.parquet'
     factors_path = 'reports/fama_french/data/fama_french_factors.csv'
     
     # Output Paths

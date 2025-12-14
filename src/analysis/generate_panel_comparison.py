@@ -53,31 +53,35 @@ def main():
     
     lines.append("## Key Comparison: Individual vs. Pooled")
     
-    header = "| Symbol | Ind. Baseline (FF5) | Panel Baseline | Panel News | Panel Sentiment | Best Approach |"
+    header = "| Symbol | Ind. Baseline | Panel Base | Panel Thematic | Panel Conviction | Panel Risk | Best Approach |"
     lines.append(header)
-    lines.append("| :--- | :--- | :--- | :--- | :--- | :--- |")
+    lines.append("| :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
     
     for idx, row in merged.iterrows():
         sym = row['symbol']
         ind_base = row['ind_baseline_r2']
         pan_base = row.get('Panel_Baseline', None)
-        pan_news = row.get('Panel_News', None)
-        pan_sent = row.get('Panel_Sentiment', None)
+        # pan_news = row.get('Panel_News', None) # Hide for brevity
+        # pan_sent = row.get('Panel_Sentiment', None) # Hide for brevity
+        pan_themes = row.get('Panel_Thematic_Shocks', None)
+        pan_conviction = row.get('Panel_Signal_Conviction', None)
+        pan_risk = row.get('Panel_Risk_Shock', None)
         
         # Determine Winner
         scores = {
             'Individual': ind_base,
             'Panel Base': pan_base,
-            'Panel News': pan_news,
-            'Panel Sent': pan_sent
+            'Panel Them': pan_themes,
+            'Panel Conv': pan_conviction,
+            'Panel Risk': pan_risk
         }
         # Filter None
         valid_scores = {k: v for k, v in scores.items() if pd.notnull(v)}
-        winner = max(valid_scores, key=valid_scores.get)
+        winner = max(valid_scores, key=valid_scores.get) if valid_scores else "N/A"
         
         def fmt(v): return f"{v:.4f}" if pd.notnull(v) else "N/A"
         
-        line = f"| **{sym}** | {fmt(ind_base)} | {fmt(pan_base)} | {fmt(pan_news)} | {fmt(pan_sent)} | **{winner}** |"
+        line = f"| **{sym}** | {fmt(ind_base)} | {fmt(pan_base)} | {fmt(pan_themes)} | {fmt(pan_conviction)} | {fmt(pan_risk)} | **{winner}** |"
         lines.append(line)
         
     lines.append("")
@@ -86,11 +90,17 @@ def main():
     mean_pan_base = merged['Panel_Baseline'].mean()
     mean_pan_news = merged['Panel_News'].mean()
     mean_pan_sent = merged['Panel_Sentiment'].mean()
+    mean_pan_themes = merged.get('Panel_Thematic_Shocks', pd.Series(dtype=float)).mean()
+    mean_pan_conviction = merged.get('Panel_Signal_Conviction', pd.Series(dtype=float)).mean()
+    mean_pan_risk = merged.get('Panel_Risk_Shock', pd.Series(dtype=float)).mean()
     
     lines.append(f"- **Individual Baseline:** {mean_ind:.4f}")
     lines.append(f"- **Panel Baseline:** {mean_pan_base:.4f}")
     lines.append(f"- **Panel News:** {mean_pan_news:.4f}")
     lines.append(f"- **Panel Sentiment:** {mean_pan_sent:.4f}")
+    lines.append(f"- **Panel Thematic Shocks:** {mean_pan_themes:.4f}")
+    lines.append(f"- **Panel Signal Conviction:** {mean_pan_conviction:.4f}")
+    lines.append(f"- **Panel Risk Shock:** {mean_pan_risk:.4f}")
     
     output_path = "reports/panel_regression/panel_comparison_summary.md"
     with open(output_path, 'w') as f:
