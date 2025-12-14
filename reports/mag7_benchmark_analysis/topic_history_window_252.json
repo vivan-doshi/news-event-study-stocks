@@ -1,0 +1,4392 @@
+[
+    {
+        "date": "2024-01-04",
+        "topics": {
+            "0": "company_said_year_ai_nyse",
+            "1": "company_2024_year_ai_2023",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_said_year_new",
+            "4": "company_ai_2023_tech_new"
+        }
+    },
+    {
+        "date": "2024-01-05",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_2024_year_ai_2023",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_jones_tech_new",
+            "4": "company_2023_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-01-08",
+        "topics": {
+            "0": "company_2023_dec_nov_ai",
+            "1": "company_ai_year_tech_new",
+            "2": "company_2024_year_ai_2023",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_tech_new_jones"
+        }
+    },
+    {
+        "date": "2024-01-09",
+        "topics": {
+            "0": "company_ai_jones_tech_new",
+            "1": "company_2024_year_ai_2023",
+            "2": "company_ai_year_tech_new",
+            "3": "company_said_ai_year_billion",
+            "4": "company_2023_ai_dec_growth"
+        }
+    },
+    {
+        "date": "2024-01-10",
+        "topics": {
+            "0": "company_ai_jones_tech_new",
+            "1": "company_2024_year_ai_2023",
+            "2": "company_ai_year_new_tech",
+            "3": "company_said_ai_year_billion",
+            "4": "company_2023_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-01-11",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_2024_year_ai_new",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2023_ai_growth_dec",
+            "4": "company_ai_jones_new_tech"
+        }
+    },
+    {
+        "date": "2024-01-12",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_2024_year_ai_new",
+            "2": "company_ai_year_new_growth",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_said_ai_year_billion"
+        }
+    },
+    {
+        "date": "2024-01-16",
+        "topics": {
+            "0": "company_ai_tech_new_jones",
+            "1": "company_2024_year_ai_growth",
+            "2": "company_said_ai_year_billion",
+            "3": "company_2023_ai_tech_growth",
+            "4": "company_ai_year_new_growth"
+        }
+    },
+    {
+        "date": "2024-01-17",
+        "topics": {
+            "0": "company_ai_year_new_growth",
+            "1": "company_said_ai_year_billion",
+            "2": "company_2023_ai_tech_growth",
+            "3": "company_ai_tech_jones_new",
+            "4": "company_2024_year_ai_said"
+        }
+    },
+    {
+        "date": "2024-01-18",
+        "topics": {
+            "0": "company_ai_said_year_new",
+            "1": "company_2024_ai_year_said",
+            "2": "2023_dec_company_nov_ai",
+            "3": "company_ai_year_tech_new",
+            "4": "company_ai_tech_growth_2023"
+        }
+    },
+    {
+        "date": "2024-01-19",
+        "topics": {
+            "0": "company_ai_jones_tech_new",
+            "1": "company_2024_ai_year_said",
+            "2": "company_2023_ai_growth_dec",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-01-22",
+        "topics": {
+            "0": "company_ai_jones_tech_new",
+            "1": "company_2024_ai_year_said",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_growth_dec"
+        }
+    },
+    {
+        "date": "2024-01-23",
+        "topics": {
+            "0": "company_2023_ai_growth_tech",
+            "1": "company_2024_ai_year_said",
+            "2": "company_said_year_ai_billion",
+            "3": "company_ai_tech_year_new",
+            "4": "company_ai_year_said_new"
+        }
+    },
+    {
+        "date": "2024-01-24",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_2024_ai_year_said",
+            "2": "company_2023_ai_growth_tech",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_jones_tech_new"
+        }
+    },
+    {
+        "date": "2024-01-25",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_2024_ai_year_said",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_higher_year_ev_just"
+        }
+    },
+    {
+        "date": "2024-01-26",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_2024_ai_year_said",
+            "2": "company_2023_ai_growth_dec",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_jones_tech_new"
+        }
+    },
+    {
+        "date": "2024-01-29",
+        "topics": {
+            "0": "company_2023_ai_growth_dec",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_jones_tech_new",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-01-30",
+        "topics": {
+            "0": "company_2023_ai_tech_growth",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_jones_new_tech",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-01-31",
+        "topics": {
+            "0": "company_ai_year_new_growth",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_year_tech_new",
+            "4": "company_said_ai_year_billion"
+        }
+    },
+    {
+        "date": "2024-02-01",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_jones_new_tech",
+            "4": "company_said_ai_year_billion"
+        }
+    },
+    {
+        "date": "2024-02-02",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-02-05",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2023_ai_dec_growth",
+            "4": "company_ai_jones_new_tech"
+        }
+    },
+    {
+        "date": "2024-02-06",
+        "topics": {
+            "0": "company_search_cloud_tech_trillion",
+            "1": "company_2024_jan_ai_year",
+            "2": "company_ai_year_said_new",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-02-07",
+        "topics": {
+            "0": "company_ai_year_new_growth",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_said_ai_year_billion",
+            "4": "company_2023_ai_growth_tech"
+        }
+    },
+    {
+        "date": "2024-02-08",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_tech_jones_new",
+            "3": "company_ai_year_new_growth",
+            "4": "company_2023_ai_growth_tech"
+        }
+    },
+    {
+        "date": "2024-02-09",
+        "topics": {
+            "0": "company_2023_ai_growth_tech",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_year_new_growth",
+            "4": "company_ai_jones_tech_new"
+        }
+    },
+    {
+        "date": "2024-02-12",
+        "topics": {
+            "0": "company_2023_ai_growth_dec",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_new_tech_jones",
+            "4": "company_ai_year_new_growth"
+        }
+    },
+    {
+        "date": "2024-02-13",
+        "topics": {
+            "0": "company_2023_ai_dec_growth",
+            "1": "company_2024_ai_year_growth",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_ai_year_new_tech",
+            "4": "company_said_ai_year_billion"
+        }
+    },
+    {
+        "date": "2024-02-14",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2024_jan_ai_feb",
+            "2": "company_ai_said_year_new",
+            "3": "company_ai_new_tech_year",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-02-15",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_2023_dec_nov_ai",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_new_jones_tech"
+        }
+    },
+    {
+        "date": "2024-02-16",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_2024_year_said",
+            "2": "company_said_ai_year_billion",
+            "3": "company_ai_jones_new_tech",
+            "4": "company_2023_ai_dec_growth"
+        }
+    },
+    {
+        "date": "2024-02-20",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_new_tech_jones",
+            "3": "company_ai_year_tech_new",
+            "4": "2023_company_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-02-21",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_jones_new_futures"
+        }
+    },
+    {
+        "date": "2024-02-22",
+        "topics": {
+            "0": "company_ai_said_year_new",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2023_ai_dec_growth",
+            "3": "company_2024_jan_feb_ai",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-02-23",
+        "topics": {
+            "0": "company_2023_ai_tech_growth",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-02-26",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_new_jones_tech",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-02-27",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_said_year_new",
+            "4": "company_said_year_ai_billion"
+        }
+    },
+    {
+        "date": "2024-02-28",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-02-29",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_jan_feb_ai"
+        }
+    },
+    {
+        "date": "2024-03-01",
+        "topics": {
+            "0": "company_said_ai_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-03-04",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_ai_growth_dec",
+            "3": "company_ai_jones_tech_new",
+            "4": "company_ai_year_new_growth"
+        }
+    },
+    {
+        "date": "2024-03-05",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2023_ai_growth_tech",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2024_jan_feb_ai"
+        }
+    },
+    {
+        "date": "2024-03-06",
+        "topics": {
+            "0": "company_2023_dec_ai_nov",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_jones_tech_new"
+        }
+    },
+    {
+        "date": "2024-03-07",
+        "topics": {
+            "0": "company_said_year_ai_nyse",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-03-08",
+        "topics": {
+            "0": "company_ai_year_said_new",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_jan_ai_feb",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-03-11",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_dec_nov_ai",
+            "3": "company_ai_year_new_tech",
+            "4": "company_ai_jones_new_tech"
+        }
+    },
+    {
+        "date": "2024-03-12",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_jones_tech_new",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-03-13",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_2024_ai_jan_feb"
+        }
+    },
+    {
+        "date": "2024-03-14",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_dec_nov_ai",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_jones_new_tech"
+        }
+    },
+    {
+        "date": "2024-03-15",
+        "topics": {
+            "0": "company_ai_tech_year_new",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_new_growth",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2023_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-03-18",
+        "topics": {
+            "0": "company_2024_ai_jan_feb",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2023_tech_new"
+        }
+    },
+    {
+        "date": "2024-03-19",
+        "topics": {
+            "0": "company_2024_ai_jan_feb",
+            "1": "company_ai_year_said_new",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_new_tech_year"
+        }
+    },
+    {
+        "date": "2024-03-20",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_dec_nov_ai",
+            "3": "company_ai_year_new_tech",
+            "4": "company_ai_tech_new_jones"
+        }
+    },
+    {
+        "date": "2024-03-21",
+        "topics": {
+            "0": "company_2023_ai_growth_dec",
+            "1": "company_2024_ai_jan_feb",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-03-22",
+        "topics": {
+            "0": "company_ai_jones_tech_new",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_ai_dec_growth",
+            "3": "company_ai_year_new_growth",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-03-25",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-03-26",
+        "topics": {
+            "0": "company_2024_ai_jan_feb",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-03-27",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_jones_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-03-28",
+        "topics": {
+            "0": "company_ai_year_new_growth",
+            "1": "company_ai_2024_year_said",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_said_ai_year_billion",
+            "4": "company_ai_tech_new_year"
+        }
+    },
+    {
+        "date": "2024-04-01",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_2024_ai_mar_jan"
+        }
+    },
+    {
+        "date": "2024-04-02",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_new_tech_jones",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-03",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_jones_tech_new",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-04",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-04-05",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_mar_jan",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-08",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_jones_tech_new",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-09",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2024_ai_mar_jan",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-04-10",
+        "topics": {
+            "0": "company_ai_new_tech_jones",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-04-11",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_new_tech_jones"
+        }
+    },
+    {
+        "date": "2024-04-12",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2024_ai_mar_jan"
+        }
+    },
+    {
+        "date": "2024-04-15",
+        "topics": {
+            "0": "2024_company_feb_jan_mar",
+            "1": "company_ai_2023_tech_new",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-04-16",
+        "topics": {
+            "0": "company_reason_tech_iphone_reasons",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_2024_ai_mar_jan"
+        }
+    },
+    {
+        "date": "2024-04-17",
+        "topics": {
+            "0": "company_ai_said_year_new",
+            "1": "company_ai_2024_year_said",
+            "2": "company_year_said_ai_nyse",
+            "3": "company_ai_year_new_tech",
+            "4": "company_ai_2023_tech_new"
+        }
+    },
+    {
+        "date": "2024-04-18",
+        "topics": {
+            "0": "2023_company_dec_nov_growth",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_tech_new_growth",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-19",
+        "topics": {
+            "0": "company_2024_ai_mar_jan",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-04-22",
+        "topics": {
+            "0": "company_2023_ai_tech_dec",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_year_tech_new",
+            "4": "company_ai_year_new_growth"
+        }
+    },
+    {
+        "date": "2024-04-23",
+        "topics": {
+            "0": "company_2023_dec_nov_ai",
+            "1": "company_2024_ai_mar_jan",
+            "2": "company_ai_tech_new_year",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-04-24",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_2024_ai_mar_jan"
+        }
+    },
+    {
+        "date": "2024-04-25",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_new",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_year_ai_said_billion",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-04-26",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_ai_apr_mar"
+        }
+    },
+    {
+        "date": "2024-04-29",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_apr_mar",
+            "3": "company_ai_2023_tech_new",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-04-30",
+        "topics": {
+            "0": "company_ai_2023_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_new_tech",
+            "3": "company_2024_ai_apr_mar",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-05-01",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_year_new_tech",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-05-02",
+        "topics": {
+            "0": "company_2024_ai_apr_mar",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2023_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-03",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_new_year_tech",
+            "3": "company_2024_ai_apr_mar",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-05-06",
+        "topics": {
+            "0": "company_ai_new_jones_tech",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_new_tech",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-05-07",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_2024_ai_apr_mar",
+            "3": "company_ai_2023_new_tech",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-08",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_2024_ai_apr_mar",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_2023_new_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-05-09",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_new_tech",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_2024_ai_apr_mar"
+        }
+    },
+    {
+        "date": "2024-05-10",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_said_year_billion",
+            "3": "company_2023_ai_new_tech",
+            "4": "company_2024_ai_apr_mar"
+        }
+    },
+    {
+        "date": "2024-05-13",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_year_new_tech",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_jones_new_tech",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-05-14",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_jones_new_tech",
+            "2": "company_ai_year_new_tech",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-05-15",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2024_ai_apr_mar",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-05-16",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_new_tech",
+            "2": "company_2024_ai_apr_mar",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_2023_tech_new"
+        }
+    },
+    {
+        "date": "2024-05-17",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_apr_mar",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-20",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_jones_new_tech",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-21",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_billion",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_new_jones_tech",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-22",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "2023_company_dec_nov_ai",
+            "3": "company_2024_ai_apr_mar",
+            "4": "company_ai_new_tech_year"
+        }
+    },
+    {
+        "date": "2024-05-23",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2023_new_tech",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_ai_apr_mar"
+        }
+    },
+    {
+        "date": "2024-05-24",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_new_year_jones",
+            "3": "company_2023_ai_new_dec",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-05-28",
+        "topics": {
+            "0": "company_2024_ai_apr_tech",
+            "1": "company_2023_dec_nov_ai",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_new_year_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-05-29",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_new_tech",
+            "3": "company_2023_ai_new_tech",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-05-30",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_jones_new_tech"
+        }
+    },
+    {
+        "date": "2024-05-31",
+        "topics": {
+            "0": "company_ai_new_tech_jones",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "2023_company_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-06-03",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_said_year_billion",
+            "3": "company_2024_ai_apr_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-06-04",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_apr_tech",
+            "3": "company_ai_year_new_tech",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-06-05",
+        "topics": {
+            "0": "ev_kia_2024_aerodynamics_awd",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2023_new_tech",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-06",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_new_tech_jones",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-06-07",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-10",
+        "topics": {
+            "0": "2024_company_apr_feb_mar",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2024_tech_039",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2023_tech_new"
+        }
+    },
+    {
+        "date": "2024-06-11",
+        "topics": {
+            "0": "company_2024_ai_apr_tech",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-06-12",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-13",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2023_tech_new",
+            "3": "company_ai_2024_tech_039",
+            "4": "2024_company_apr_mar_feb"
+        }
+    },
+    {
+        "date": "2024-06-14",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-17",
+        "topics": {
+            "0": "company_2023_dec_nov_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_tech_new_year",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-18",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_apr_tech",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-06-20",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-21",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_jones_tech_new",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-06-24",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-25",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_new_tech_year",
+            "3": "company_2023_dec_nov_growth",
+            "4": "company_2024_ai_apr_tech"
+        }
+    },
+    {
+        "date": "2024-06-26",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2023_tech_year",
+            "3": "company_ai_2024_tech_039",
+            "4": "2024_company_apr_ai_mar"
+        }
+    },
+    {
+        "date": "2024-06-27",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_new_tech_jones",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_year_said_billion",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-06-28",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2024_ai_tech_apr",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-07-01",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "2024_company_apr_ai_jun",
+            "3": "company_ai_2024_tech_039",
+            "4": "company_ai_2023_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-02",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2024_ai_tech_apr"
+        }
+    },
+    {
+        "date": "2024-07-03",
+        "topics": {
+            "0": "company_2024_ai_tech_apr",
+            "1": "company_2023_dec_nov_ai",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-07-05",
+        "topics": {
+            "0": "company_ai_2023_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "2024_company_apr_ai_jun",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-07-08",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_tech_apr",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-07-09",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_2023_ai_dec_tech"
+        }
+    },
+    {
+        "date": "2024-07-10",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_ai_tech_new_jones",
+            "2": "company_ai_year_new_tech",
+            "3": "company_ai_year_said_billion",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-07-11",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_apr_ai_jun",
+            "4": "company_ai_2023_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-12",
+        "topics": {
+            "0": "company_2023_ai_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "2024_company_apr_ai_jun",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-07-15",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_2023_ai_dec_tech"
+        }
+    },
+    {
+        "date": "2024-07-16",
+        "topics": {
+            "0": "company_2023_dec_nov_ai",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_ai_year_tech_new",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-07-17",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2024_tech_039",
+            "3": "2024_company_apr_ai_jun",
+            "4": "company_ai_2023_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-18",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "2024_company_apr_ai_jun",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2023_ai_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-19",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-07-22",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_ai_year_tech_new",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-07-23",
+        "topics": {
+            "0": "company_ai_2024_039_tech",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_apr_jun",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2023_ai_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-24",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-07-25",
+        "topics": {
+            "0": "company_ai_tech_new_2023",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_year_said_billion",
+            "3": "2023_company_dec_nov_growth",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-07-26",
+        "topics": {
+            "0": "company_2024_ai_tech_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "2023_company_dec_nov_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_tech_new_year"
+        }
+    },
+    {
+        "date": "2024-07-29",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_apr_ai_jun",
+            "4": "company_2023_ai_tech_year"
+        }
+    },
+    {
+        "date": "2024-07-30",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2023_ai_year_tech",
+            "4": "2024_company_ai_apr_jun"
+        }
+    },
+    {
+        "date": "2024-07-31",
+        "topics": {
+            "0": "company_ai_2024_year_said",
+            "1": "company_year_said_billion_ai",
+            "2": "company_ai_year_tech_new",
+            "3": "company_ai_said_year_new",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-08-01",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2024_tech_039",
+            "3": "company_2023_ai_tech_year",
+            "4": "2024_company_apr_ai_jul"
+        }
+    },
+    {
+        "date": "2024-08-02",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_039_tech_2024",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2023_ai_tech_year",
+            "4": "company_2024_ai_apr_growth"
+        }
+    },
+    {
+        "date": "2024-08-05",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_2023_dec_ai_nov",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-08-06",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-08-07",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_tech_growth",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-08-08",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_2023_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-08-09",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_tech_new_year",
+            "3": "2023_company_dec_nov_growth",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-08-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_tech_growth",
+            "3": "2023_company_dec_nov_growth",
+            "4": "company_ai_tech_new_year"
+        }
+    },
+    {
+        "date": "2024-08-13",
+        "topics": {
+            "0": "company_2023_ai_tech_year",
+            "1": "company_ai_039_2024_tech",
+            "2": "company_2024_ai_apr_jul",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-08-14",
+        "topics": {
+            "0": "company_ai_year_new_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-08-15",
+        "topics": {
+            "0": "2024_company_ai_apr_jul",
+            "1": "company_ai_year_said_new",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2023_ai_dec_tech",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-08-16",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_ai_year_new_tech"
+        }
+    },
+    {
+        "date": "2024-08-19",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_new",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2023_ai_tech_dec",
+            "4": "2024_company_ai_apr_jul"
+        }
+    },
+    {
+        "date": "2024-08-20",
+        "topics": {
+            "0": "2024_company_ai_apr_jul",
+            "1": "company_ai_year_said_new",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2023_ai_tech_year",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-08-21",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_tech_new",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-08-22",
+        "topics": {
+            "0": "company_ai_year_said_new",
+            "1": "2024_company_ai_apr_jul",
+            "2": "company_2023_ai_dec_year",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-08-23",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_tech_new",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2023_dec_nov_ai",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-08-26",
+        "topics": {
+            "0": "company_2023_ai_dec_tech",
+            "1": "company_ai_2024_039_tech",
+            "2": "company_ai_year_said_new",
+            "3": "company_2024_ai_apr_jul",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-08-27",
+        "topics": {
+            "0": "2023_company_dec_nov_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_tech_new_year",
+            "3": "company_ai_year_said_new",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-08-28",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_dec_tech",
+            "2": "company_ai_year_said_new",
+            "3": "company_ai_said_year_musk",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-08-29",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_new",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-08-30",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_ai_year_said_new",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-09-03",
+        "topics": {
+            "0": "company_2024_ai_tech_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_new_year_tech",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-09-04",
+        "topics": {
+            "0": "company_ai_year_musk_tech",
+            "1": "company_ai_year_2023_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-09-05",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_ai_year_said_new"
+        }
+    },
+    {
+        "date": "2024-09-06",
+        "topics": {
+            "0": "company_2024_ai_tech_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "2023_company_dec_nov_growth",
+            "4": "company_ai_tech_year_new"
+        }
+    },
+    {
+        "date": "2024-09-09",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_2023_said",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_apr_aug_jun",
+            "4": "company_2024_ai_apr_growth"
+        }
+    },
+    {
+        "date": "2024-09-10",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_2024_year_said",
+            "2": "company_ai_said_year_growth",
+            "3": "company_year_said_ai_billion",
+            "4": "company_ai_year_tech_new"
+        }
+    },
+    {
+        "date": "2024-09-11",
+        "topics": {
+            "0": "company_ai_year_tech_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_tech_growth",
+            "4": "company_2023_dec_nov_ai"
+        }
+    },
+    {
+        "date": "2024-09-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_new",
+            "2": "company_2024_ai_tech_growth",
+            "3": "2023_dec_company_nov_growth",
+            "4": "company_ai_tech_new_year"
+        }
+    },
+    {
+        "date": "2024-09-13",
+        "topics": {
+            "0": "company_ai_year_2023_said",
+            "1": "company_year_ai_said_billion",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_039",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-09-16",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_ai_tech_year_new",
+            "4": "2023_company_dec_nov_growth"
+        }
+    },
+    {
+        "date": "2024-09-17",
+        "topics": {
+            "0": "company_ai_tech_039_year",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-09-18",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_tech_039",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-09-19",
+        "topics": {
+            "0": "2024_company_ai_apr_aug",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-09-20",
+        "topics": {
+            "0": "company_2024_ai_growth_tech",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_tech_year_039",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-09-23",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_2023_said",
+            "2": "company_ai_2024_tech_039",
+            "3": "company_ai_said_year_billion",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-09-24",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "2024_company_ai_apr_aug",
+            "3": "company_2023_ai_dec_nov",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-09-25",
+        "topics": {
+            "0": "2024_company_ai_apr_aug",
+            "1": "company_2023_ai_dec_nov",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_tech_039",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-09-26",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2023_ai_dec_nov",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-09-27",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_growth_apr",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_039_tech_2024"
+        }
+    },
+    {
+        "date": "2024-09-30",
+        "topics": {
+            "0": "company_2024_ai_039_tech",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-10-01",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_new_tech",
+            "2": "company_2024_ai_tech_growth",
+            "3": "company_year_ai_said_billion",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-02",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_2023_year_said",
+            "2": "2024_company_ai_apr_aug",
+            "3": "company_ai_year_billion_tech",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-10-03",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-04",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_2023_year_said",
+            "2": "company_2024_ai_growth_apr",
+            "3": "company_ai_2024_tech_039",
+            "4": "2024_company_apr_aug_ai"
+        }
+    },
+    {
+        "date": "2024-10-07",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_billion_tech",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-10-08",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2023_ai_dec_nov",
+            "3": "company_ai_2024_tech_039",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-10-09",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2023_year_said",
+            "2": "2024_company_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_billion_tech"
+        }
+    },
+    {
+        "date": "2024-10-10",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2023_year_said",
+            "2": "2024_company_ai_apr_aug",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-10-11",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-14",
+        "topics": {
+            "0": "company_2024_ai_tech_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-15",
+        "topics": {
+            "0": "2024_company_ai_apr_aug",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_039_2024_tech",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-10-16",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_ai_039_tech_2024"
+        }
+    },
+    {
+        "date": "2024-10-17",
+        "topics": {
+            "0": "company_2023_ai_dec_nov",
+            "1": "company_2024_ai_tech_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-10-18",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-21",
+        "topics": {
+            "0": "company_ai_039_tech_new",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_jul"
+        }
+    },
+    {
+        "date": "2024-10-22",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_year_said_musk",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-10-23",
+        "topics": {
+            "0": "2023_dec_company_nov_ai",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_tech_2023_year",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-10-24",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2023_year_said",
+            "2": "2024_company_aug_apr_jul",
+            "3": "company_2024_ai_apr_jul",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-10-25",
+        "topics": {
+            "0": "company_2024_ai_apr_aug",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_039",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2023_ai_dec_nov"
+        }
+    },
+    {
+        "date": "2024-10-28",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-10-29",
+        "topics": {
+            "0": "company_2024_ai_growth_tech",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_year_said_growth",
+            "3": "2024_company_apr_ai_jul",
+            "4": "company_ai_2024_039_tech"
+        }
+    },
+    {
+        "date": "2024-10-30",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_dec_ai_nov",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-10-31",
+        "topics": {
+            "0": "company_2024_ai_apr_aug",
+            "1": "company_2023_dec_ai_nov",
+            "2": "company_ai_2024_tech_039",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-11-01",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_growth_apr",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2024-11-04",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_dec_ai_nov",
+            "2": "2024_company_apr_ai_jun",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-11-05",
+        "topics": {
+            "0": "company_ai_year_said_musk",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-11-06",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_tech_musk",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-11-07",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-11-08",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-11-11",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-11-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-11-13",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_dec_ai_nov",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-11-14",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_apr_growth",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_apr_aug_ai"
+        }
+    },
+    {
+        "date": "2024-11-15",
+        "topics": {
+            "0": "2024_company_apr_jun_ai",
+            "1": "company_ai_2023_year_said",
+            "2": "company_ai_039_tech_2024",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2024-11-18",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_dec_ai_nov",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-11-19",
+        "topics": {
+            "0": "company_ai_tech_2024_039",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_apr_ai_aug",
+            "4": "company_2024_ai_growth_apr"
+        }
+    },
+    {
+        "date": "2024-11-20",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_year_ai_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-11-21",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2023_ai_year_said",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-11-22",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_tech_musk",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_2023_dec_ai_year"
+        }
+    },
+    {
+        "date": "2024-11-25",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "2024_company_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_039_tech_new"
+        }
+    },
+    {
+        "date": "2024-11-26",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_year_billion_musk",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-11-27",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-11-29",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_2023",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_2023_dec_ai_year"
+        }
+    },
+    {
+        "date": "2024-12-02",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_tech_039_year",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_growth_tech"
+        }
+    },
+    {
+        "date": "2024-12-03",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_growth_said"
+        }
+    },
+    {
+        "date": "2024-12-04",
+        "topics": {
+            "0": "company_ai_year_said_2023",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2023_dec_ai_2024"
+        }
+    },
+    {
+        "date": "2024-12-05",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_dec_ai_2024",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-12-06",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-12-09",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_2023_ai_year_2024",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-12-10",
+        "topics": {
+            "0": "company_today_moving_boeing_says",
+            "1": "company_2023_ai_year_2024",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_tech_growth"
+        }
+    },
+    {
+        "date": "2024-12-11",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_2024",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_year_ai_said_billion"
+        }
+    },
+    {
+        "date": "2024-12-12",
+        "topics": {
+            "0": "company_2024_ai_growth_tech",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_tech_039",
+            "4": "2024_company_apr_aug_jun"
+        }
+    },
+    {
+        "date": "2024-12-13",
+        "topics": {
+            "0": "company_ai_2024_growth_tech",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_039_tech"
+        }
+    },
+    {
+        "date": "2024-12-16",
+        "topics": {
+            "0": "company_2024_ai_apr_aug",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-12-17",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_2024_039_tech",
+            "3": "company_ai_2024_growth_tech",
+            "4": "2024_company_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-12-18",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-12-19",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_tech_039_year",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_2024_ai_growth_intelligence"
+        }
+    },
+    {
+        "date": "2024-12-20",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_zacks_year_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_2023_year_ai_2024"
+        }
+    },
+    {
+        "date": "2024-12-23",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_tech_2024_growth",
+            "3": "company_2024_ai_growth_apr",
+            "4": "company_2024_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2024-12-24",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_year_ai_said_billion",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2024-12-26",
+        "topics": {
+            "0": "company_ai_year_billion_tech",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2024-12-27",
+        "topics": {
+            "0": "company_2024_ai_apr_aug",
+            "1": "company_2023_year_ai_2024",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2024-12-30",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2023_year_ai_2024",
+            "3": "company_2024_ai_apr_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2024-12-31",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_2023_ai_year_2024",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-01-02",
+        "topics": {
+            "0": "company_ai_2024_tech_039",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_growth_tech",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_ai_year_said_musk"
+        }
+    },
+    {
+        "date": "2025-01-03",
+        "topics": {
+            "0": "company_ai_year_tech_039",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_apr_ai_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_cfa_parkev_tatevosian"
+        }
+    },
+    {
+        "date": "2025-01-06",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2024_tech_039",
+            "2": "ai_investing_2024_cryptocurrency_best",
+            "3": "company_ai_growth_2024_tech",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-01-07",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_early_friday_vehicles_trading",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_tech_musk"
+        }
+    },
+    {
+        "date": "2025-01-08",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_today_moving_moved_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_musk_tech",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-01-10",
+        "topics": {
+            "0": "company_ai_today_says_2024",
+            "1": "company_year_nyse_growth_2024",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-01-13",
+        "topics": {
+            "0": "company_ai_2024_growth_tech",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_2025_ai_new_year",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2025-01-14",
+        "topics": {
+            "0": "company_ai_tech_039_year",
+            "1": "company_2025_ai_year_new",
+            "2": "company_ai_2024_growth_tech",
+            "3": "2024_company_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-01-15",
+        "topics": {
+            "0": "company_ai_tech_year_039",
+            "1": "company_ai_2025_year_new",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-01-16",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2025_year_new",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_billion_musk"
+        }
+    },
+    {
+        "date": "2025-01-17",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2025_year_new",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_tech_billion",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-01-21",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_year_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_said_year_musk",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-01-22",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_trump_year",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2024_growth_tech",
+            "4": "2024_company_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2025-01-23",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_trump_year",
+            "2": "company_ai_year_billion_tech",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-01-24",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_2025_trump_year",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_039_tech_today"
+        }
+    },
+    {
+        "date": "2025-01-27",
+        "topics": {
+            "0": "company_ai_2024_growth_tech",
+            "1": "company_ai_2025_trump_year",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_apr_ai_aug",
+            "4": "company_ai_tech_039_year"
+        }
+    },
+    {
+        "date": "2025-01-28",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_trump_year",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-01-29",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_ai_apr_jul"
+        }
+    },
+    {
+        "date": "2025-01-30",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_ai_tech_2024_039",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_growth"
+        }
+    },
+    {
+        "date": "2025-01-31",
+        "topics": {
+            "0": "company_ai_tech_039_year",
+            "1": "company_ai_2025_year_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-02-03",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_039",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-02-04",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_tech_year_039",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-02-05",
+        "topics": {
+            "0": "company_ai_tech_039_year",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-02-06",
+        "topics": {
+            "0": "company_ai_039_tech_new",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_growth_tech",
+            "4": "company_2024_apr_ai_jul"
+        }
+    },
+    {
+        "date": "2025-02-07",
+        "topics": {
+            "0": "company_ai_year_billion_tech",
+            "1": "company_ai_2025_year_trump",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-02-10",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_2025_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-02-11",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_2025_billion",
+            "2": "2024_company_apr_ai_aug",
+            "3": "company_ai_growth_2024_intelligence",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-02-12",
+        "topics": {
+            "0": "company_2024_ai_apr_aug",
+            "1": "company_ai_year_2025_trump",
+            "2": "company_ai_growth_2024_tech",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_039"
+        }
+    },
+    {
+        "date": "2025-02-13",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_2025_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-02-14",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_year_2025_billion",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_billion_tech"
+        }
+    },
+    {
+        "date": "2025-02-18",
+        "topics": {
+            "0": "company_ai_year_trump_2025",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_growth_cash_bull_year"
+        }
+    },
+    {
+        "date": "2025-02-19",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_trump_2025",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_tech_2024_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-02-20",
+        "topics": {
+            "0": "company_2024_apr_ai_jul",
+            "1": "company_ai_year_trump_2025",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_039_tech_year",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-02-21",
+        "topics": {
+            "0": "bitcoin_search_company_package_pay",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_trump_2025",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-02-24",
+        "topics": {
+            "0": "company_ai_tech_growth_2024",
+            "1": "company_ai_year_trump_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_mar",
+            "4": "company_2024_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2025-02-25",
+        "topics": {
+            "0": "company_ai_year_tech_billion",
+            "1": "company_ai_year_trump_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_apr_ai_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-02-26",
+        "topics": {
+            "0": "company_ai_year_trump_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-02-27",
+        "topics": {
+            "0": "company_ai_year_growth_said",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_trump_billion",
+            "3": "company_ai_tech_039_year",
+            "4": "company_2024_ai_growth_apr"
+        }
+    },
+    {
+        "date": "2025-02-28",
+        "topics": {
+            "0": "company_ai_year_trump_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_tech_039_2024",
+            "3": "company_ai_said_year_billion",
+            "4": "company_2024_ai_growth_apr"
+        }
+    },
+    {
+        "date": "2025-03-03",
+        "topics": {
+            "0": "company_ai_039_tech_year",
+            "1": "company_ai_year_billion_trump",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2025-03-04",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_2024_tech_growth",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_2025_artificial_intelligence",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-03-05",
+        "topics": {
+            "0": "company_ai_year_billion_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_billion_tech",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-03-06",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_musk_thursday_early_driving",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_apr_jul_jun",
+            "4": "company_ai_year_billion_said"
+        }
+    },
+    {
+        "date": "2025-03-07",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_039_tech_new",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_apr_ai_aug",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-03-10",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_deepseek_hedge",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-03-11",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_billion_said",
+            "4": "company_2024_ai_apr_jul"
+        }
+    },
+    {
+        "date": "2025-03-12",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_2024_tech_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2025_intelligence_artificial",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-03-13",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_aug_jun_ai",
+            "3": "company_2024_ai_apr_jul",
+            "4": "company_ai_tech_2024_growth"
+        }
+    },
+    {
+        "date": "2025-03-14",
+        "topics": {
+            "0": "company_ai_year_billion_today",
+            "1": "company_ai_year_billion_said",
+            "2": "company_2024_apr_ai_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-03-17",
+        "topics": {
+            "0": "company_ai_2025_intelligence_artificial",
+            "1": "company_ai_tech_2024_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-03-18",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-03-19",
+        "topics": {
+            "0": "company_ai_2025_intelligence_artificial",
+            "1": "company_ai_year_said_growth",
+            "2": "company_subscription_premium_ai_news",
+            "3": "company_2024_ai_growth_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-03-20",
+        "topics": {
+            "0": "company_2024_apr_ai_aug",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_said_year_musk",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-03-21",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-03-24",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_apr_aug",
+            "4": "company_ai_2025_intelligence_artificial"
+        }
+    },
+    {
+        "date": "2025-03-25",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_billion_musk",
+            "4": "company_2024_ai_apr_aug"
+        }
+    },
+    {
+        "date": "2025-03-26",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2025-03-27",
+        "topics": {
+            "0": "company_ai_2025_intelligence_artificial",
+            "1": "company_growth_roe_ai_return",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_billion_said",
+            "4": "company_2024_ai_tech_apr"
+        }
+    },
+    {
+        "date": "2025-03-28",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_apr_ai_aug",
+            "3": "company_ai_2025_intelligence_artificial",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-03-31",
+        "topics": {
+            "0": "company_ai_says_tech_039",
+            "1": "company_ai_year_billion_said",
+            "2": "company_2024_apr_jul_aug",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-04-01",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_billion_said",
+            "2": "company_2024_apr_ai_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-04-02",
+        "topics": {
+            "0": "company_ai_tech_year_musk",
+            "1": "company_ai_year_billion_said",
+            "2": "company_2024_apr_jul_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_tech_growth"
+        }
+    },
+    {
+        "date": "2025-04-03",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_2024_ai_apr_aug",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_billion_said"
+        }
+    },
+    {
+        "date": "2025-04-04",
+        "topics": {
+            "0": "company_ai_year_billion_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_said_year_musk",
+            "4": "company_2024_apr_ai_aug"
+        }
+    },
+    {
+        "date": "2025-04-07",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_2025_trump_intelligence",
+            "3": "company_2024_ai_aug_apr",
+            "4": "company_ai_tech_039_year"
+        }
+    },
+    {
+        "date": "2025-04-08",
+        "topics": {
+            "0": "company_2024_jul_apr_aug",
+            "1": "company_ai_year_trump_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_musk_year_billion"
+        }
+    },
+    {
+        "date": "2025-04-09",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_trump_billion",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-04-10",
+        "topics": {
+            "0": "company_ai_year_trump_billion",
+            "1": "company_2024_jul_aug_jun",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_growth_tech",
+            "4": "company_ai_2024_tech_says"
+        }
+    },
+    {
+        "date": "2025-04-11",
+        "topics": {
+            "0": "company_ai_2025_trump_intelligence",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_tech_039_growth",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-04-14",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_year_trump_billion",
+            "2": "company_2024_jul_aug_ai",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_musk_billion"
+        }
+    },
+    {
+        "date": "2025-04-15",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2025_trump_intelligence",
+            "3": "company_2024_ai_aug_tech",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-04-16",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2025_investing_today",
+            "2": "company_ai_trump_subscription_premium",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_aug_tech"
+        }
+    },
+    {
+        "date": "2025-04-17",
+        "topics": {
+            "0": "company_2024_ai_aug_tech",
+            "1": "company_ai_trump_2025_intelligence",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-04-21",
+        "topics": {
+            "0": "company_ai_trump_2025_intelligence",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_2024_jul_aug_ai",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-04-22",
+        "topics": {
+            "0": "company_2024_jul_aug_jun",
+            "1": "company_ai_year_trump_said",
+            "2": "company_ai_tech_says_039",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-04-23",
+        "topics": {
+            "0": "tech_blue_chip_winning_boiled",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_trump",
+            "3": "company_ai_trump_2025_intelligence",
+            "4": "company_2024_ai_aug_tech"
+        }
+    },
+    {
+        "date": "2025-04-24",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_trump_2025_premium",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_year_said_trump",
+            "4": "company_ai_tech_2024_intelligence"
+        }
+    },
+    {
+        "date": "2025-04-25",
+        "topics": {
+            "0": "company_subscription_premium_ai_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_aug_tech",
+            "4": "company_ai_2025_trump_intelligence"
+        }
+    },
+    {
+        "date": "2025-04-28",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_trump_said",
+            "2": "company_ai_tech_2024_says",
+            "3": "company_2024_jul_aug_jun",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-04-29",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_ai_subscription_premium_trump",
+            "3": "company_2024_ai_aug_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-04-30",
+        "topics": {
+            "0": "company_ai_year_said_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_trump_2025_intelligence",
+            "4": "company_2024_ai_aug_tech"
+        }
+    },
+    {
+        "date": "2025-05-01",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_jul_aug_jun",
+            "3": "company_ai_2024_tech_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-05-02",
+        "topics": {
+            "0": "company_2024_jul_aug_jun",
+            "1": "company_ai_year_trump_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2024_growth_tech",
+            "4": "company_ai_year_billion_musk"
+        }
+    },
+    {
+        "date": "2025-05-05",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_tech_2024_growth",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-05-06",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_tech_2024_growth",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_2024_aug_jul_jun",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-05-07",
+        "topics": {
+            "0": "company_2024_ai_aug_jul",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_subscription_premium_ai_trump",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-05-08",
+        "topics": {
+            "0": "company_ai_year_trump_said",
+            "1": "company_ai_year_billion_says",
+            "2": "company_ai_tech_2024_growth",
+            "3": "company_2024_jul_aug_jun",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-05-09",
+        "topics": {
+            "0": "company_ai_year_trump_said",
+            "1": "company_ai_year_tech_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_jul_aug_jun",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-05-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2024_tech_growth",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_aug_jul_jun"
+        }
+    },
+    {
+        "date": "2025-05-13",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_tech_2024_intelligence",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_aug_jul_jun"
+        }
+    },
+    {
+        "date": "2025-05-14",
+        "topics": {
+            "0": "company_ai_tech_2024_intelligence",
+            "1": "company_ai_year_said_billion",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-05-15",
+        "topics": {
+            "0": "company_ai_2024_tech_growth",
+            "1": "company_ai_trump_premium_subscription",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_aug_jul_jun"
+        }
+    },
+    {
+        "date": "2025-05-16",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_trump_premium_subscription",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-05-19",
+        "topics": {
+            "0": "company_ai_2025_trump_intelligence",
+            "1": "company_ai_year_said_growth",
+            "2": "company_subscription_premium_ai_trump",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-05-20",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2024_tech_intelligence",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_aug_jul_jun"
+        }
+    },
+    {
+        "date": "2025-05-21",
+        "topics": {
+            "0": "company_ai_year_said_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_tech_year_says",
+            "3": "company_2024_aug_jul_jun",
+            "4": "company_ai_2024_growth_tech"
+        }
+    },
+    {
+        "date": "2025-05-22",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_trump_subscription_premium",
+            "4": "company_ai_2025_news_today"
+        }
+    },
+    {
+        "date": "2025-05-23",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_tech_2024_growth",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_aug_jul_jun"
+        }
+    },
+    {
+        "date": "2025-05-27",
+        "topics": {
+            "0": "company_ai_year_tech_musk",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-05-28",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_aug_jul_jun",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_2024_tech_intelligence"
+        }
+    },
+    {
+        "date": "2025-05-29",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_ai_year_said_growth",
+            "2": "2024_24_jul_jun_25",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-05-30",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_tech_2024_intelligence",
+            "2": "company_2024_jul_aug_jun",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-06-02",
+        "topics": {
+            "0": "company_ai_subscription_premium_trump",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2025_intelligence_artificial",
+            "4": "company_ai_year_trump_said"
+        }
+    },
+    {
+        "date": "2025-06-03",
+        "topics": {
+            "0": "company_ai_trump_said_year",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_billion_said",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-06-04",
+        "topics": {
+            "0": "company_2024_ai_aug_jul",
+            "1": "company_ai_year_said_billion",
+            "2": "company_premium_subscription_ai_trump",
+            "3": "company_ai_trump_2025_intelligence",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-06-05",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_subscription_premium_ai_trump",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_ai_trump_2025_intelligence"
+        }
+    },
+    {
+        "date": "2025-06-06",
+        "topics": {
+            "0": "company_ai_2024_year_growth",
+            "1": "company_ai_said_trump_year",
+            "2": "company_ai_2025_trump_intelligence",
+            "3": "company_ai_year_billion_said",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-06-09",
+        "topics": {
+            "0": "company_ai_tech_intelligence_2024",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_aug_jul_ai"
+        }
+    },
+    {
+        "date": "2025-06-10",
+        "topics": {
+            "0": "company_2024_ai_aug_jul",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_tech_intelligence_artificial",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-06-11",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_2025_trump_intelligence",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-06-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_2025_intelligence",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_subscription_premium_trump_ai"
+        }
+    },
+    {
+        "date": "2025-06-13",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_2025_trump_intelligence",
+            "4": "company_subscription_premium_trump_ai"
+        }
+    },
+    {
+        "date": "2025-06-16",
+        "topics": {
+            "0": "company_subscription_premium_video_ago",
+            "1": "company_ai_2024_year_growth",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_year_said_trump",
+            "4": "company_ai_trump_2025_tariffs"
+        }
+    },
+    {
+        "date": "2025-06-17",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_2024_ai_aug_jul",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_tech_intelligence_artificial"
+        }
+    },
+    {
+        "date": "2025-06-25",
+        "topics": {
+            "0": "company_ai_trump_subscription_premium",
+            "1": "company_2024_ai_aug_jul",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_2025_news_today"
+        }
+    },
+    {
+        "date": "2025-06-26",
+        "topics": {
+            "0": "company_2024_ai_aug_jul",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_2025_trump_intelligence",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-06-27",
+        "topics": {
+            "0": "company_2024_ai_aug_jul",
+            "1": "company_subscription_premium_trump_ai",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_trump_2025_intelligence",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-06-30",
+        "topics": {
+            "0": "company_2024_jul_aug_ai",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_tech_intelligence_artificial",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-07-01",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_ai_tech_intelligence_artificial",
+            "4": "company_2024_jul_aug_ai"
+        }
+    },
+    {
+        "date": "2025-07-02",
+        "topics": {
+            "0": "company_ai_tech_intelligence_artificial",
+            "1": "company_ai_trump_premium_subscription",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_2024_aug_jul_ai"
+        }
+    },
+    {
+        "date": "2025-07-03",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_tech_intelligence_artificial",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_2024_aug_jul_ai"
+        }
+    },
+    {
+        "date": "2025-07-07",
+        "topics": {
+            "0": "company_ai_2025_today_invest",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_2024_ai_aug_jul",
+            "4": "company_ai_trump_subscription_premium"
+        }
+    },
+    {
+        "date": "2025-07-08",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2024_ai_aug_jul",
+            "2": "company_ai_trump_2025_today",
+            "3": "company_ai_year_said_growth",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-07-09",
+        "topics": {
+            "0": "company_ai_year_said_trump",
+            "1": "company_ai_year_2024_growth",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_ai_2025_intelligence_artificial",
+            "4": "company_today_investing_news_invest"
+        }
+    },
+    {
+        "date": "2025-07-10",
+        "topics": {
+            "0": "company_ai_tech_intelligence_artificial",
+            "1": "company_ai_year_said_trump",
+            "2": "company_ai_year_said_growth",
+            "3": "company_2024_jul_aug_ai",
+            "4": "owns_investing_company_definition_example"
+        }
+    },
+    {
+        "date": "2025-07-11",
+        "topics": {
+            "0": "company_ai_trump_year_today",
+            "1": "company_2024_ai_aug_jul",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_trump"
+        }
+    },
+    {
+        "date": "2025-07-14",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "ai_investing_workers_company_employees",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-07-15",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_subscription_premium_ai_trump",
+            "3": "company_ai_2025_trump_intelligence",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-07-16",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_2024_ai_aug_jul",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-07-17",
+        "topics": {
+            "0": "company_2024_aug_jul_ai",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_intelligence_tech_artificial",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-07-18",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_ai_intelligence_tech_artificial",
+            "4": "company_2024_aug_jul_ai"
+        }
+    },
+    {
+        "date": "2025-08-01",
+        "topics": {
+            "0": "company_ai_trump_new_tariffs",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_2025_today_invest",
+            "3": "company_subscription_premium_trump_ai",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-08-04",
+        "topics": {
+            "0": "company_ai_trump_subscription_premium",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_2025_news_today",
+            "3": "company_ai_year_said_trump",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-08-05",
+        "topics": {
+            "0": "company_ai_trump_subscription_premium",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2025_news_today",
+            "4": "company_2024_ai_aug_jul"
+        }
+    },
+    {
+        "date": "2025-08-06",
+        "topics": {
+            "0": "company_ai_trump_said_year",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_year_said_billion",
+            "3": "company_premium_subscription_trump_ai",
+            "4": "company_ai_trump_2025_intelligence"
+        }
+    },
+    {
+        "date": "2025-08-07",
+        "topics": {
+            "0": "company_subscription_premium_trump_ai",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_trump_2025_intelligence",
+            "4": "company_2024_ai_aug_intelligence"
+        }
+    },
+    {
+        "date": "2025-08-08",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_2024_aug_jul_ai",
+            "4": "company_ai_intelligence_artificial_2024"
+        }
+    },
+    {
+        "date": "2025-08-11",
+        "topics": {
+            "0": "company_subscription_premium_ai_trump",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_trump_2025_intelligence",
+            "3": "company_ai_year_said_trump",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-08-12",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_subscription_premium_ai_trump",
+            "3": "company_ai_2025_trump_intelligence",
+            "4": "company_2024_ai_aug_intelligence"
+        }
+    },
+    {
+        "date": "2025-08-13",
+        "topics": {
+            "0": "2024_aug_levine_scott_magnificent",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_2024_aug_intelligence",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-08-14",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_2024_aug_ai_growth",
+            "2": "company_ai_trump_premium_subscription",
+            "3": "company_ai_intelligence_artificial_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-08-15",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_year_trump_billion",
+            "3": "company_subscription_premium_ai_trump",
+            "4": "company_ai_2025_trump_intelligence"
+        }
+    },
+    {
+        "date": "2025-08-18",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_2024_said",
+            "2": "company_ai_2025_news_today",
+            "3": "company_ai_year_billion_said",
+            "4": "company_ai_trump_subscription_premium"
+        }
+    },
+    {
+        "date": "2025-08-25",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_tech_new",
+            "3": "company_ai_year_trump_said",
+            "4": "company_2024_ai_aug_intelligence"
+        }
+    },
+    {
+        "date": "2025-08-26",
+        "topics": {
+            "0": "company_ai_trump_new_intelligence",
+            "1": "company_subscription_premium_trump_ai",
+            "2": "company_ai_year_2024_said",
+            "3": "company_ai_year_said_billion",
+            "4": "company_august_form_ai_18"
+        }
+    },
+    {
+        "date": "2025-08-27",
+        "topics": {
+            "0": "company_ai_year_said_2024",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_trump_subscription_premium",
+            "3": "company_august_form_18_8k",
+            "4": "company_ai_2025_invest_growth"
+        }
+    },
+    {
+        "date": "2025-08-28",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_2024",
+            "2": "company_ai_year_said_billion",
+            "3": "company_august_form_ai_2025",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-08-29",
+        "topics": {
+            "0": "ai_company_data_government_potential",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_2024_aug_intelligence",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-09-02",
+        "topics": {
+            "0": "company_ai_said_year_2025",
+            "1": "company_ai_year_said_2024",
+            "2": "company_ai_year_said_trump",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_billion_said"
+        }
+    },
+    {
+        "date": "2025-09-03",
+        "topics": {
+            "0": "company_2024_aug_ai_2025",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_intelligence_artificial_2024",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-09-04",
+        "topics": {
+            "0": "company_ai_trump_premium_subscription",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_year_trump_growth",
+            "3": "company_ai_2024_aug_intelligence",
+            "4": "company_ai_said_year_billion"
+        }
+    },
+    {
+        "date": "2025-09-05",
+        "topics": {
+            "0": "musk_company_trump_said_wood",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_trump_subscription_premium",
+            "4": "company_ai_august_form_2025"
+        }
+    },
+    {
+        "date": "2025-09-08",
+        "topics": {
+            "0": "company_ai_2024_aug_intelligence",
+            "1": "company_ai_year_billion_said",
+            "2": "company_ai_said_year_billion",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_trump_premium_subscription"
+        }
+    },
+    {
+        "date": "2025-09-09",
+        "topics": {
+            "0": "company_subscription_premium_ai_trump",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_2024_aug_intelligence",
+            "4": "company_ai_trump_2025_new"
+        }
+    },
+    {
+        "date": "2025-09-10",
+        "topics": {
+            "0": "company_ai_trump_new_tech",
+            "1": "company_ai_2024_aug_intelligence",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_said_year_billion",
+            "4": "company_subscription_premium_ai_trump"
+        }
+    },
+    {
+        "date": "2025-09-11",
+        "topics": {
+            "0": "company_ai_year_billion_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_trump_subscription_premium",
+            "3": "company_ai_august_form_2025",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-09-12",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_billion_said",
+            "3": "company_ai_trump_premium_subscription",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-09-15",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_2024_aug_intelligence",
+            "3": "company_ai_2025_august_form",
+            "4": "company_ai_premium_subscription_trump"
+        }
+    },
+    {
+        "date": "2025-09-16",
+        "topics": {
+            "0": "company_ai_year_trump_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_premium_subscription_trump",
+            "3": "company_ai_said_year_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-09-17",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_premium_subscription_trump",
+            "3": "company_ai_august_form_2025",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-09-18",
+        "topics": {
+            "0": "company_ai_year_trump_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_august_form_2025",
+            "4": "company_ai_premium_subscription_trump"
+        }
+    },
+    {
+        "date": "2025-09-23",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_premium_subscription_trump",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_august_form_2025"
+        }
+    },
+    {
+        "date": "2025-09-24",
+        "topics": {
+            "0": "company_ai_trump_new_tech",
+            "1": "company_ai_said_year_billion",
+            "2": "company_premium_subscription_ai_trump",
+            "3": "company_ai_intelligence_artificial_2025",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-09-25",
+        "topics": {
+            "0": "company_ai_year_growth_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_premium_subscription_ai_trump",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_trump_new_2025"
+        }
+    },
+    {
+        "date": "2025-09-26",
+        "topics": {
+            "0": "company_ai_2025_august_form",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_billion_said",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_premium_subscription_trump"
+        }
+    },
+    {
+        "date": "2025-09-29",
+        "topics": {
+            "0": "company_ai_trump_new_2025",
+            "1": "company_ai_year_said_growth",
+            "2": "company_premium_subscription_ai_trump",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-09-30",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_premium_subscription_trump",
+            "4": "company_ai_august_form_2025"
+        }
+    },
+    {
+        "date": "2025-10-01",
+        "topics": {
+            "0": "company_hubspot_zacks_growth_hubs",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_trump_new_tech",
+            "3": "company_ai_subscription_premium_billion",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-10-02",
+        "topics": {
+            "0": "company_ai_august_form_2025",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_trump_musk_new",
+            "3": "company_premium_subscription_news_plan",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-10-03",
+        "topics": {
+            "0": "company_ai_trump_2025_new",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_billion_said",
+            "3": "company_ai_said_year_growth",
+            "4": "company_premium_subscription_ai_trump"
+        }
+    },
+    {
+        "date": "2025-10-06",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_intelligence_artificial_2025",
+            "2": "company_ai_premium_subscription_trump",
+            "3": "company_ai_said_year_billion",
+            "4": "company_august_form_ai_18"
+        }
+    },
+    {
+        "date": "2025-10-07",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_premium_subscription_trump",
+            "4": "company_ai_august_form_2025"
+        }
+    },
+    {
+        "date": "2025-10-08",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_said_year_billion",
+            "2": "company_ai_trump_new_intelligence",
+            "3": "company_premium_subscription_ai_trump",
+            "4": "company_ai_intelligence_artificial_2025"
+        }
+    },
+    {
+        "date": "2025-10-09",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_billion",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_new_tech",
+            "4": "company_premium_subscription_news_ai"
+        }
+    },
+    {
+        "date": "2025-10-10",
+        "topics": {
+            "0": "company_ai_year_billion_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_new_tech",
+            "4": "company_premium_subscription_ai_news"
+        }
+    },
+    {
+        "date": "2025-10-13",
+        "topics": {
+            "0": "company_premium_subscription_ai_trump",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_trump_new_intelligence"
+        }
+    },
+    {
+        "date": "2025-10-14",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_august_form_2025",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_premium_subscription_trump"
+        }
+    },
+    {
+        "date": "2025-10-15",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_growth_said",
+            "3": "company_ai_premium_subscription_trump",
+            "4": "company_ai_august_form_2025"
+        }
+    },
+    {
+        "date": "2025-10-16",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_trump_new_tech",
+            "3": "company_ai_august_form_2025",
+            "4": "company_premium_subscription_news_plan"
+        }
+    },
+    {
+        "date": "2025-10-17",
+        "topics": {
+            "0": "company_ai_year_said_growth",
+            "1": "company_ai_year_said_growth",
+            "2": "company_premium_subscription_ai_news",
+            "3": "company_ai_trump_new_tech",
+            "4": "company_ai_year_billion_said"
+        }
+    },
+    {
+        "date": "2025-10-20",
+        "topics": {
+            "0": "company_ai_premium_year_said",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_trump_new_news",
+            "3": "company_ai_year_billion_growth",
+            "4": "company_ai_said_year_growth"
+        }
+    },
+    {
+        "date": "2025-10-21",
+        "topics": {
+            "0": "company_ai_000_new_global",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_trump_new_2025",
+            "4": "company_premium_subscription_ai_trump"
+        }
+    },
+    {
+        "date": "2025-10-22",
+        "topics": {
+            "0": "company_ai_august_form_2025",
+            "1": "company_ai_year_said_growth",
+            "2": "company_ai_premium_subscription_trump",
+            "3": "company_ai_year_said_billion",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-10-23",
+        "topics": {
+            "0": "company_ai_2025_new_august",
+            "1": "company_ai_year_said_growth",
+            "2": "company_premium_subscription_ai_trump",
+            "3": "company_ai_year_said_growth",
+            "4": "company_ai_year_billion_said"
+        }
+    },
+    {
+        "date": "2025-10-24",
+        "topics": {
+            "0": "company_epic_walmart_samsung_year",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_ai_year_said_billion",
+            "3": "company_ai_premium_subscription_trump",
+            "4": "company_ai_year_said_growth"
+        }
+    },
+    {
+        "date": "2025-10-27",
+        "topics": {
+            "0": "company_ai_year_said_billion",
+            "1": "company_ai_year_said_growth",
+            "2": "company_premium_subscription_news_plan",
+            "3": "company_trump_ai_china_year",
+            "4": "company_ai_trump_new_tech"
+        }
+    },
+    {
+        "date": "2025-10-28",
+        "topics": {
+            "0": "company_2025_best_vs_know",
+            "1": "company_ai_year_growth_said",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_said_year_billion",
+            "4": "company_ai_premium_subscription_trump"
+        }
+    },
+    {
+        "date": "2025-10-29",
+        "topics": {
+            "0": "company_premium_subscription_ai_news",
+            "1": "company_ai_2025_intelligence_artificial",
+            "2": "company_ai_year_said_growth",
+            "3": "company_ai_trump_new_tech",
+            "4": "company_ai_year_said_billion"
+        }
+    },
+    {
+        "date": "2025-10-30",
+        "topics": {
+            "0": "company_ai_said_year_billion",
+            "1": "company_ai_year_growth_said",
+            "2": "company_ai_trump_new_tech",
+            "3": "company_premium_subscription_ai_news",
+            "4": "company_ai_year_growth_said"
+        }
+    }
+]
