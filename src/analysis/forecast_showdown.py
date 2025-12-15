@@ -17,12 +17,15 @@ FF5 = ['Mkt-RF', 'SMB', 'HML', 'RMW', 'CMA']
 # Features
 SHOCK = ['z_score_sentiment']
 VOL_INTERACT = ['interact_Vol_Sent']
+TOPIC_SHOCK = ['z_score_topic_0', 'z_score_topic_1', 'z_score_topic_2', 'z_score_topic_3', 'z_score_topic_4']
 
 MODELS = {
     '00_Benchmark_FF5_T1': FF5,
     '01_FF3_Shock_T1': FF3 + SHOCK,
     '02_FF3_VolInteract_T1': FF3 + VOL_INTERACT,
-    '03_FF3_Combined_T1': FF3 + SHOCK + VOL_INTERACT
+    '03_FF3_Combined_T1': FF3 + SHOCK + VOL_INTERACT,
+    '04_FF3_TopicShock_T1': FF3 + TOPIC_SHOCK,
+    '05_FF3_TopicShock_VolInteract_T1': FF3 + TOPIC_SHOCK + VOL_INTERACT
 }
 
 def load_data(file_path):
@@ -161,5 +164,10 @@ def run_forecast_showdown(df, window=120, output_dir='reports/forecast_showdown'
         avg.to_csv(os.path.join(output_dir, 'forecast_avg.csv'))
 
 if __name__ == "__main__":
-    df = load_data('data/master_analysis_data_advanced.csv')
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_path", default="data/master_analysis_data_advanced.csv")
+    args = parser.parse_args()
+    
+    df = load_data(args.data_path)
     run_forecast_showdown(df)

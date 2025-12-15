@@ -23,7 +23,9 @@ NEWS_SENT = ['avg_sentiment']
 NEWS_INTERACT = ['interaction_term']
 NEWS_SHOCK = ['z_score_sentiment']
 TOPIC_DEV = ['sent_topic_0', 'sent_topic_1', 'sent_topic_2', 'sent_topic_3', 'sent_topic_4']
+TOPIC_DEV = ['sent_topic_0', 'sent_topic_1', 'sent_topic_2', 'sent_topic_3', 'sent_topic_4']
 TOPIC_INTERACT = ['interaction_topic_0', 'interaction_topic_1', 'interaction_topic_2', 'interaction_topic_3', 'interaction_topic_4']
+TOPIC_SHOCK = ['z_score_topic_0', 'z_score_topic_1', 'z_score_topic_2', 'z_score_topic_3', 'z_score_topic_4']
 
 # Factors
 CAPM = ['Mkt-RF']
@@ -58,7 +60,15 @@ MODELS = {
     '18_FF5_Interaction': FF5 + NEWS_INTERACT,
     '19_FF5_Shock': FF5 + NEWS_SHOCK,
     '20_FF5_Topics': FF5 + TOPIC_DEV,
-    '21_FF5_TopicInteract': FF5 + TOPIC_INTERACT
+    '20_FF5_Topics': FF5 + TOPIC_DEV,
+    '21_FF5_TopicInteract': FF5 + TOPIC_INTERACT,
+    
+    # --- Topic Shocks ---
+    '22_FF3_TopicShock': FF3 + TOPIC_SHOCK,
+    '23_FF5_TopicShock': FF5 + TOPIC_SHOCK,
+    
+    # --- Hybrid ---
+    '24_FF3_TopicShock_VolInteract': FF3 + TOPIC_SHOCK + NEWS_INTERACT
 }
 
 def load_data(file_path):

@@ -50,12 +50,9 @@ def calculate_features(news_df, stock_df, ff_df):
     # 1. Aggregate News Sentiment Daily per Stock
     # Assuming news_df has 'symbol_query', 'final_date_for_news', 'sentiment_finbert'
     # Check column names
-    if 'final_date_for_news' not in news_df.columns:
-         # Fallback or create it (logic from feature_engineering.py should be applied if raw)
-         # Assuming input news_df IS ALREADY processed by standard pipeline or we need to apply date logic?
-         # The task said "Build master_analysis_input.csv". 
-         # We should probably assume news_df is the raw embeddings/processed file.
-         # Let's rely on 'published_at' if available and doing simple day agg for now/
+    if 'date' in news_df.columns:
+         news_df['date'] = pd.to_datetime(news_df['date'])
+    elif 'final_date_for_news' not in news_df.columns:
          if 'published_at' in news_df.columns:
              news_df['date'] = pd.to_datetime(news_df['published_at']).dt.normalize()
          else:
@@ -239,7 +236,26 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
+    # Load Label Map if exists
+    topic_map_path = 'reports/clustering/topic_labels_map_5_clean.json'
+    label_map = {}
+    if os.path.exists(topic_map_path):
+        import json
+        with open(topic_map_path, 'r') as f:
+            label_map = json.load(f)
+            logger.info(f"Loaded Topic Map: {label_map}")
+
     news, stock, ff = load_data(args.news_path, args.stock_path, args.ff_path)
+    # Pass map to calculate features? 
+    # Current script doesn't rename columns based on map, it uses ID.
+    # User might want the columns to be named "count_topic_EV_Musk". 
+    # But downstream scripts (Regression) expect 'topic_0', 'topic_1' etc or 'count_topic_0'.
+    # Changing column names breaks downstream scripts unless I update them too.
+    # DECISION: Keep IDs in columns ('count_topic_0'), but use Map for Reporting/Logging only.
+    # OR: just rely on the executive summary to map IDs to Names. 
+    # User said "Make sure 5 topics... labeled... run all analysis".
+    # I will stick to IDs in code to avoid massive refactor, but update Executive Summary with new labels.
+    
     master_df = calculate_features(news, stock, ff)
     
     logger.info(f"Saving Master Dataset to {args.output_path}...")

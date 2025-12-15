@@ -136,5 +136,10 @@ def run_showdown(df, window=120, output_dir='reports/final_showdown'):
         avg.to_csv(os.path.join(output_dir, 'showdown_avg.csv'))
 
 if __name__ == "__main__":
-    df = load_data('data/master_analysis_data_advanced.csv')
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_path", default="data/master_analysis_data_advanced.csv")
+    args = parser.parse_args()
+    
+    df = load_data(args.data_path)
     run_showdown(df)
