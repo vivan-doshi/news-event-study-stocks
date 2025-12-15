@@ -1,102 +1,142 @@
-# Mag7 News Event Study Analysis
+# 📈 Mag7 News Event Study: Quantifying Narrative Risk
 
-This project performs an event study analysis to investigate the impact of news sentiment on the stock performance of the "Magnificent 7" companies (Apple, Amazon, Google, Meta, Microsoft, Nvidia, Tesla).
+> **"Topics, not just tones, drive alpha."**
 
-It refactors the original Jupyter notebook workflow into a robust, modular Python pipeline for reproducibility and scalability.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![NLP](https://img.shields.io/badge/NLP-ChronoBERT%20%2B%20FinBERT-green)
+![Quant](https://img.shields.io/badge/Quant-Fama--French%205--Factor-red)
 
-## 📂 Project Structure
+## 📖 Executive Summary
+This project presents a rigorous event study analyzing the impact of **specific news narratives** on the "Magnificent 7" stocks (AAPL, AMZN, GOOGL, META, MSFT, NVDA, TSLA).
 
-```
+Unlike traditional sentiment analysis that aggregates all news into a single "Positive/Negative" score, this framework uses **unsupervised learning (ChronoBERT + K-Means)** to isolate distinct topics (e.g., *Regulatory Scrutiny* vs. *Product Launches*).
+
+**Key Insight:** Generic sentiment adds minimal value over the Fama-French baseline. However, detecting **"Topic Shocks"**—abnormal spikes in sentiment for specific narratives—drastically improves risk-adjusted returns, **doubling the Sortino Ratio**.
+
+---
+
+## 📊 Key Findings
+
+Comparative performance of trading strategies based on different risk factors (2021-2025):
+
+| Model Specification | Sortino Ratio | Improvement | Interpretation |
+| :--- | :--- | :--- | :--- |
+| **1. Baseline (FF5)** | **25.0** | - | Market beta & factors explain most variance. |
+| **2. FF5 + Sentiment** | 25.4 | +1.6% | Aggregate sentiment is too coarse a signal. |
+| **3. FF5 + Topic Shocks** | **49.7** | **+98.8%** | **Isolating specific narrative risks avoids "crashes".** |
+
+> **Conclusion:** The specific *source* of the news matters more than the general *mood*. A "Regulatory" shock carries different risk premiums than a "Product" shock.
+
+---
+
+## 🏗️ Technical Methodology
+
+The pipeline follows a strict "No Look-Ahead Bias" protocol suitable for institutional deployment.
+
+### 1. Advanced NLP Pipeline
+*   **Entity Masking**: To ensure clustering focuses on *narratives* rather than *entities*, all mentions of company names (e.g., "Apple", "Nvidia") are masked to a neutral `<company>` token before embedding.
+*   **ChronoBERT Embeddings**: We use **ChronoBERT** (Manela et al., 2025) instead of standard BERT.
+    *   *Why?* Standard BERT models trained on 2024 data "know" the future of 2022. ChronoBERT uses time-specific checkpoints to ensure embeddings for 2022 news only use knowledge available up to 2021.
+*   **Dynamic Clustering**: K-Means ($K=50$) groups articles into latent topics.
+*   **Financial Sentiment**: **FinBERT** (ProsusAI) provides domain-specific sentiment scores (Positive, Neutral, Negative).
+
+### 2. Quantitative Framework
+We use the **Fama-French 5-Factor Model** as the robust baseline to beat. The event study tests whether news signals provide alpha *after* controlling for:
+*   Market Risk (Mkt-RF)
+*   Size (SMB) & Value (HML)
+*   Profitability (RMW) & Investment (CMA)
+
+**The Winning Model (Topic Shock):**
+$$ R_{t} - R_{f,t} = \alpha + \sum \beta_{FF}F_{t} + \sum_{k=1}^{K} \beta_{shock,k} Z(S_{k, t-1}) + \epsilon_t $$
+*   Where $Z(S_{k, t-1})$ is the rolling Z-Score of sentiment for Topic $k$.
+
+---
+
+## 📂 Repository Structure
+
+```text
 .
-├── config/
-│   └── topic_to_label_map_v2.csv        # Topic mapping configuration
-├── data/
-│   ├── processed/
-│   │   ├── mag7_news_with_sentiment...  # Input news data
-│   │   ├── mag7_yf_2021_2025.parquet    # Input stock data
-│   │   └── mag7_aggregated_features...  # Generated features (Intermediate)
-│   └── outputs/
-│       └── results/
-│           ├── plots/                   # Generated regression plots
-│           └── tables/                  # Summary statistics (CSV)
 ├── src/
-│   ├── analysis/
-│   │   ├── feature_engineering.py       # Data aggregation logic
-│   │   └── event_study.py               # OLS regression & plotting
-│   └── run_analysis.py                  # Main CLI entry point
-└── archive/                             # Archive of legacy notebooks
+│   ├── analysis/             # Core Event Study & Regression Logic
+│   │   ├── event_study.py    # OLS Models & Signal Construction
+│   │   └── visuals.py        # Chart Generation (Residuals, Betas)
+│   ├── chronobert_kmeans.py  # Step 1: Embedding & Clustering Pipeline
+│   ├── sentiment_finbert.py  # Step 2: Financial Sentiment Scoring
+│   └── run_analysis.py       # Main CLI Entrypoint
+├── data/
+│   ├── processed/            # Parquet files (News + OHLCV)
+│   └── outputs/              # Regression Results (Tables & Plots)
+├── config/
+│   └── topic_map.csv         # Mapping Topic IDs -> Human Labels
+└── reports/
+    ├── performance_analysis.md # Detailed statistical breakdown
+    └── executive_summary.md    # High-level business overview
 ```
 
-## 🛠️ Setup & Installation
-
-Ensure you have Python installed (3.8+ recommended).
-
-### Dependencies
-The project relies on standard data science libraries:
-*   `pandas`
-*   `numpy`
-*   `statsmodels`
-*   `matplotlib`
-*   `pyarrow` (for Parquet support)
-
-Install them via pip:
-```bash
-pip install pandas numpy statsmodels matplotlib pyarrow
-```
+---
 
 ## 🚀 Usage
 
-The entire pipeline is orchestrated by the `src/run_analysis.py` driver script.
+The pipeline is fully automated via `src/run_analysis.py`.
 
-### 1. Run the Full Pipeline (Recommended)
-This runs both feature engineering and the event study for all configured symbols.
+### Installation
+```bash
+pip install -r requirements.txt
+# Requires: torch, transformers, scikit-learn, pandas, statsmodels
+```
+
+### Running the Pipeline
+
+**1. End-to-End Analysis (Recommended)**
+Runs feature engineering, variable construction, and event study regressions.
 ```bash
 python src/run_analysis.py --stage all
 ```
 
-### 2. Run Feature Engineering Only
-aggregates raw news and stock data into a single dataset.
+**2. Run specific components**
 ```bash
-python src/run_analysis.py --stage feature_engineering
-```
-**Output**: `data/processed/mag7_aggregated_features.parquet`
-
-### 3. Run Event Study Only
-Runs OLS regressions on the aggregated data. You can specify a single symbol or a list.
-```bash
-# Run for all symbols
+# Only re-run the regressions (useful for tweaking model specs)
 python src/run_analysis.py --stage event_study
 
-# Run for specific symbols (e.g., Google and Apple)
-python src/run_analysis.py --stage event_study --symbol GOOGL.US,AAPL.US
+# Filter for specific tickers
+python src/run_analysis.py --stage event_study --symbol NVDA.US,TSLA.US
 ```
-**Output**: Plots in `data/outputs/results/plots/` and summary tables in `data/outputs/results/tables/`.
 
-## 📊 Methodology
+---
 
-### Feature Engineering
-1.  **Data Loading**: Loads Parquet files for news and stock history.
-2.  **Date Adjustment**: Aligns news timestamps to trading days:
-    *   News published after 4:00 PM EST is moved to the next day.
-    *   Weekends and NASDAQ holidays are skipped to find the next valid trading day.
-3.  **Aggregation**:
-    *   Calculates daily sentiment metrics (FinBERT) per topic.
-    *   Counts news volume per topic.
-4.  **Merging**: joins aggregated news features with daily stock returns (`adj_close`).
+## 🖥️ Interactive Terminal
 
-### Event Study (OLS Regression)
-*   **Model**: Regresses **next-day log return** (`ret_log_1d`) against:
-    *   Daily Sentiment (`day_sentiment`)
-    *   **Lagged Sentiment**: 1-day, 2-day, and 3-day lags.
-    *   **Interaction**: Sentiment × News Volume.
-*   **Validation**: Splits data into training (pre-June 2025) and testing sets.
-*   **Metrics**: Reports both **In-Fold R²** (Training set) and **Out-of-Fold R²** (Test set) to evaluate generalization.
-    *   *Note: The cutoff date is currently set to '2025-06-01' matching the original study parameters.*
-*   **Vizualization**: Generates "Actual vs. Predicted" and "Residuals" plots to assess model fit.
+The project includes a full-stack **Alpha Terminal** for real-time signal monitoring, built to mimic an institutional trader's dashboard.
 
-## 📝 Configuration
-*   **Topic Map**: Mappings between topic IDs and human-readable labels are stored in `config/topic_to_label_map_v2.csv`.
-*   **Target Variable**: The analysis targets the **Next Day's Adjusted Close** price by default.
+### Architecture
+*   **Frontend**: React + Vite + Tailwind CSS (Fast, responsive UI with "Glassmorphism" design).
+*   **Backend**: FastAPI (High-performance Python API serving model signals).
 
-## 📧 Contact
-For questions regarding the analysis implementation, please refer to the source code definitions in `src/analysis/`.
+### Launch Instructions
+
+**1. Start the Backend API**
+Serves Topic Shock signals and portfolio stats.
+```bash
+cd terminal/backend
+python main.py
+# Server starts at http://localhost:8000
+```
+
+**2. Start the Frontend Dashboard**
+Launches the interactive UI.
+```bash
+# In a new terminal window
+cd terminal/frontend
+npm install  # First time only
+npm run dev
+# Dashboard available at http://localhost:5173
+```
+
+---
+
+## 📧 Contact & Citation
+**Author:** Vivan Doshi
+**Project:** News Event Study & Algorithmic Trading Strategy
+
+*   **ChronoBERT**: He, Lv, Manela, & Wu (2025). "ChronoBERT: Pre-training on Timeline-Aware Data".
+*   **FinBERT**: Araci, D. (2019). "FinBERT: Financial Sentiment Analysis with Pre-trained Language Models".
