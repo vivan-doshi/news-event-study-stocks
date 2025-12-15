@@ -4,6 +4,9 @@ import random
 import os
 from datetime import datetime, timedelta
 
+STOCK_DATA_CACHE = None
+GLOBAL_TOPIC_DF = None
+
 def calculate_sortino(returns, risk_free_rate=0.0, target_return=0.0):
     """
     Calculates the Sortino Ratio.
@@ -28,49 +31,112 @@ def calculate_sortino(returns, risk_free_rate=0.0, target_return=0.0):
     sortino = (excess_return / downside_dev) * np.sqrt(252)
     return sortino
 
+
 def get_intraday_signals():
     """
     Returns a 7x5 Matrix: 7 Mag7 Stocks, each with scores for 5 Topics.
+    Sources REAL Z-Scores from data/master_analysis_data_advanced_clean.csv
     """
-    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
+    global GLOBAL_TOPIC_DF
+    file_path = "data/master_analysis_data_advanced_clean.csv"
     
-    topics = [
-        {"name": "EV & Musk", "desc": "Deliveries, FSD, Tweets"},
-        {"name": "Policy", "desc": "Fed, Inflation, Election"}, 
-        {"name": "Analyst", "desc": "Upgrades, Targets"}, 
-        {"name": "Corp Acts", "desc": "M&A, Dividends"},
-        {"name": "AI & Chips", "desc": "GPU, Data Center"}
+    if GLOBAL_TOPIC_DF is None:
+        if not os.path.exists(file_path):
+            return []
+        try:
+            print("Loading Topic Data CSV...")
+            GLOBAL_TOPIC_DF = pd.read_csv(file_path)
+            GLOBAL_TOPIC_DF['date'] = pd.to_datetime(GLOBAL_TOPIC_DF['date'])
+            
+            # Pre-filter for Mag7 to speed up queries
+            mag7 = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
+            # Handle column name variation if needed
+            t_col = 'ticker_yf' if 'ticker_yf' in GLOBAL_TOPIC_DF.columns else 'symbol'
+            # Use simple string matching or isin if formatting allows
+            # Assuming 'ticker_yf' has format 'AAPL.US', so we might need strict check or simple contains
+            # But regex contains is slow. Let's try to just filter down by string match if possible
+            # or just regex filter ONCE here.
+            mask = GLOBAL_TOPIC_DF[t_col].apply(lambda x: any(t in str(x) for t in mag7))
+            GLOBAL_TOPIC_DF = GLOBAL_TOPIC_DF[mask].copy()
+            print(f"Cached {len(GLOBAL_TOPIC_DF)} rows for Mag7.")
+        except Exception as e:
+            print(f"Error loading topic data: {e}")
+            return []
+            
+    df = GLOBAL_TOPIC_DF
+        
+    # User-Defined Topic Names for FF3+Shock Model
+    topic_map = [
+        {"id": 0, "name": "AI and EV rally", "desc": "Sector Growth & Momentum"},
+        {"id": 1, "name": "Earnings", "desc": "EPS, Revenue, Guidance"},
+        {"id": 2, "name": "Analyst Ratings", "desc": "Upgrades & Price Targets"},
+        {"id": 3, "name": "Trump/Macro", "desc": "Fed, Election, Interest Rates"},
+        {"id": 4, "name": "Corporate Actions", "desc": "M&A, Buybacks, Splits"}
     ]
-    
+        
+    tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA"]
     matrix_data = []
-    
+
     for ticker in tickers:
+        # Get latest data for this ticker
+        # Use 'ticker_yf' or 'symbol' column
+        if 'ticker_yf' in df.columns:
+            ticker_col = 'ticker_yf'
+        else:
+            ticker_col = 'symbol'
+            
+        # Filter and sort
+        mask = df[ticker_col].astype(str).str.contains(ticker, case=False, na=False)
+        ticker_df = df[mask].sort_values('date')
+        
+        if ticker_df.empty:
+            continue
+            
+        # Take a recent window to find last non-zero signals
+        recent_window = ticker_df.tail(120)
+        
         stock_topics = []
         ticker_shock = False
         
-        for t_data in topics:
-            # Simulate Z-Score with some correlation logic
-            # e.g. NVDA correlates more with AI, TSLA with EV
-            mean_val = 0
-            if ticker == "TSLA" and "EV" in t_data["name"]: mean_val = 1.0
-            if ticker == "NVDA" and "AI" in t_data["name"]: mean_val = 1.5
+        stock_topics = []
+        ticker_shock = False
+        
+        for t in topic_map:
+            t_id = t['id']
+            col_name = f"z_score_topic_{t_id}"
             
-            shock_val = np.random.normal(mean_val, 1)
+            # Default to 0.0
+            z_val = 0.0
             
-            # Occasional huge shock
-            if random.random() > 0.90:
-                shock_val += 2.5 * (1 if random.random() > 0.5 else -1)
+            # Search for last non-zero value in ENTIRE history
+            if col_name in ticker_df.columns:
+                # Get non-zero AND non-NaN values
+                non_zeros = ticker_df[
+                    (ticker_df[col_name] != 0) & 
+                    (ticker_df[col_name].notna()) &
+                    (~np.isnan(ticker_df[col_name]))
+                ]
+                if not non_zeros.empty:
+                    z_val = float(non_zeros.iloc[-1][col_name])
+                else:
+                    # If truly 0 everywhere, use 0
+                    z_val = 0.0
             
-            is_shock = abs(shock_val) > 2.0
+            # Handle NaNs which break JSON
+            if pd.isna(z_val) or np.isnan(z_val):
+                z_val = 0.0
+            
+            # Check for shock
+            is_shock = abs(z_val) > 1.96 # 95% CI
             if is_shock: ticker_shock = True
             
             stock_topics.append({
-                "name": t_data["name"],
-                "desc": t_data["desc"],
-                "z_score": round(shock_val, 2),
+                "name": t['name'],
+                "desc": t['desc'],
+                "z_score": round(z_val, 2),
                 "is_shock": is_shock
             })
-
+        
         matrix_data.append({
             "ticker": ticker,
             "has_shock": ticker_shock,
@@ -78,6 +144,9 @@ def get_intraday_signals():
         })
         
     return matrix_data
+
+
+
 
 def get_overnight_signal():
     """
