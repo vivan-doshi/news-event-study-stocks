@@ -87,6 +87,8 @@ def run_forecast_showdown(df, window=120, output_dir='reports/forecast_showdown'
     
     symbols = df['symbol'].unique()
     
+    all_preds_rows = []
+
     for sym in symbols:
         logger.info(f"Processing {sym}...")
         sym_df = df[df['symbol'] == sym].sort_values('date').set_index('date')
@@ -106,34 +108,17 @@ def run_forecast_showdown(df, window=120, output_dir='reports/forecast_showdown'
             y = sym_df['excess_ret']
             X = sm.add_constant(sym_df[features])
             
-            # --- THE KEY CHANGE: LAG PREDICTORS FOR T+1 FORECAST ---
-            # We want to predict y_t using X_{t-1}
-            # Shift X down by 1 so that the row at time t contains X_{t-1} and y_t
+            # T+1 Lag Logic
             X_lagged = X.shift(1)
-            
-            # Drop the first row (NaN shift)
-            # Combine X_lagged and y to align
             combined = pd.concat([y, X_lagged], axis=1).dropna()
             
             y_aligned = combined['excess_ret']
             X_aligned = combined.drop(columns=['excess_ret'])
             
             try:
-                # Rolling Window on the ALIGNED data
-                # This means we use (X_{t-w-1}...X_{t-2}) to predict y_{t-w}...y_{t-1} to learn beta
-                # Then apply beta to X_{t-1} to predict y_t
-                
                 rolling_model = RollingOLS(y_aligned, X_aligned, window=window)
                 results = rolling_model.fit()
                 
-                # Get the beta meant for the NEXT observation
-                # Results.params are the betas estimated using window ending at t.
-                # We use these betas to predict y_{t+1} using X_t (which is in row t+1 of X_aligned? No)
-                
-                # With rollingOLS, params[t] is fit on y[t-w+1:t+1] and X[t-w+1:t+1].
-                # We want to predict y[t+1] using X_aligned[t+1] (which is X_original[t]) and params[t].
-                
-                # Shift params by 1 to align with the future prediction target
                 pred_params = results.params.shift(1).dropna()
                 common_idx = pred_params.index.intersection(X_aligned.index)
                 
@@ -145,17 +130,41 @@ def run_forecast_showdown(df, window=120, output_dir='reports/forecast_showdown'
                 
                 y_pred = (X_curr * pred_params).sum(axis=1)
                 
+                # Metrics
                 metrics = calculate_metrics(y_curr, y_pred, model_name)
                 metrics['symbol'] = sym
                 summary_results.append(metrics)
+
+                # Store Predictions for Charting (Only for Best Model or All)
+                # Store all for flexibility
+                preds_df = pd.DataFrame({
+                    'date': y_pred.index,
+                    'symbol': sym,
+                    'model': model_name,
+                    'y_true': y_curr.values,
+                    'y_pred': y_pred.values
+                })
+                all_preds_rows.append(preds_df)
                 
             except Exception as e:
                 logger.error(f"Error {model_name} {sym}: {e}")
+
+    # Save Predictions
+    if all_preds_rows:
+        final_preds_df = pd.concat(all_preds_rows)
+        final_preds_df.to_csv(os.path.join(output_dir, 'preds_forecast.csv'), index=False)
                 
     # Aggregate
     res_df = pd.DataFrame(summary_results)
     if not res_df.empty:
         res_df.to_csv(os.path.join(output_dir, 'forecast_results.csv'), index=False)
+        
+        # Save Predictions for Charting
+        all_preds = []
+        # Re-run loop or store inside loop? 
+        # Since I cannot easily re-run inside this snippet, I will just acknowledge I need to edit the loop above.
+        # WAIT, better strategy: I will replace the whole function to include the prediction storage list.
+
         
         avg = res_df.groupby('model').mean(numeric_only=True)
         print("\n=== FORECASTING (T+1) RESULTS (Average) ===")

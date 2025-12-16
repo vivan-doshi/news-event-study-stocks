@@ -14,14 +14,19 @@ sns.set_theme(style="whitegrid")
 plt.rcParams['figure.dpi'] = 300
 plt.rcParams['font.family'] = 'sans-serif'
 
+# Configuration
+DATA_DIR = "reports/mag7_benchmark_analysis"
+REPORTS_DIR = "reports"
 OUTPUT_DIR = "reports/visuals"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# PATHS
-AUG_FEATURES_PATH = "data/processed/mag7_augmented_features.parquet"
+# Paths
+NEWS_PATH = "data/processed/mag7_news_with_topicsV2.parquet"
 EMBEDDINGS_PATH = "data/processed/mag7_embeddings.parquet"
-TOPICS_PATH = "data/processed/mag7_news_with_topicsV2.parquet" # For labels
-PREDS_PATH = "reports/mag7_benchmark_analysis/preds_window_100.csv"
+LASSO_PATH = "reports/lasso/top_lasso_features.csv"
+MODEL_PREDS_PATH = "reports/forecast_showdown/preds_forecast.csv" # UPDATED: Using T+1 Forecasts for Realistic Equity Curve
+AUGMENTED_PATH = "data/processed/mag7_augmented_features.parquet"
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def save_plot(name):
     path = f"{OUTPUT_DIR}/{name}"
@@ -96,7 +101,7 @@ def plot_real_tsne():
     if 'topic_id_kmeans' not in df.columns:
         # Try joining with topic file if needed, but usually embeddings parquet has it or index matches.
         # Let's check mag7_news_with_topicsV2.parquet which definitely has topics
-        df_topics = pd.read_parquet(TOPICS_PATH)
+        df_topics = pd.read_parquet(NEWS_PATH)
         # Assuming index alignment if sourced from same pipeline
         if len(df) == len(df_topics):
              df['topic_id_kmeans'] = df_topics['topic_id_kmeans'].values
@@ -167,10 +172,10 @@ def plot_real_tsne():
 # 3. SIGNAL CONSTRUCTION
 def plot_nvda_signal_engineering():
     """Detailed Dual-Axis for NVDA"""
-    if not os.path.exists(AUG_FEATURES_PATH):
+    if not os.path.exists(AUGMENTED_PATH):
         return
     
-    df = pd.read_parquet(AUG_FEATURES_PATH)
+    df = pd.read_parquet(AUGMENTED_PATH)
     df_nvda = df[df['symbol_query'].str.contains("NVDA")].copy()
     df_nvda = df_nvda.sort_values(by='final_date_for_news')
     df_nvda = df_nvda.tail(200) # Zoom in
@@ -237,40 +242,46 @@ def plot_volume_interaction_matrix():
 
 # 4. RESULTS - SPECIFIC MODEL
 def plot_results_final_suite():
-    if not os.path.exists(PREDS_PATH):
-        print("Preds file not found.")
+    # Reverting to Contemporaneous Model (Lasso) as requested ("Actual Strategy")
+    # This shows the "Theoretical Upper Bound" (1,200x) which demonstrates signal quality.
+    path = "reports/mag7_benchmark_analysis/preds_window_100.csv"
+    
+    if not os.path.exists(path):
+        print(f"Preds file not found: {path}")
         return
         
-    df = pd.read_csv(PREDS_PATH)
+    df = pd.read_csv(path)
     df['date'] = pd.to_datetime(df['date'])
     
-    # Select The Best Model: FF3_Shock (or TopicShock)
-    # The csv has columns 'y_pred' and 'y_true'.
-    # We assume 'y_pred' in this file corresponds to the BEST model selected during previous runs.
-    # If the file contains multiple models, we need filter.
-    # Looking at CSV structure from prev turns: it seems to contain ONE set of preds?
-    # Or multiple? Let's check columns.
-    # If just "y_pred", we assume it's the active model.
-    # "y_true" is market.
-    
     # Calculate Returns
+    # Strategy: Sign(Pred) * True
     df['strat_ret'] = np.sign(df['y_pred']) * df['y_true']
     
+    # Benchmark: Buy & Hold (Mean of Mag 7)
+    # The 'y_true' column IS the excess return of the stock.
+    # Averaging it gives the Equal-Weighted Mag 7 Index.
     port = df.groupby('date')[['y_true', 'strat_ret']].mean().reset_index()
     
-    # Cumulative
-    port['cum_bench'] = (1 + port['y_true']).cumprod()
-    port['cum_strat'] = (1 + port['strat_ret']).cumprod()
+    # Cumulative (Start at $100)
+    port['cum_bench'] = (1 + port['y_true']).cumprod() * 100
+    port['cum_strat'] = (1 + port['strat_ret']).cumprod() * 100
     
-    # 1. Equity Curve
+    # Plot
     plt.figure(figsize=(12, 6))
-    plt.plot(port['date'], port['cum_strat'], color='#00A36C', linewidth=2.5, label='FF3 + Topic Shock')
-    plt.plot(port['date'], port['cum_bench'], color='#B0B0B0', linestyle='--', linewidth=1.5, label='Benchmark')
+    plt.plot(port['date'], port['cum_strat'], color='#00A36C', linewidth=2.5, label='Lasso Strategy (Theoretical Upper Bound)')
+    plt.plot(port['date'], port['cum_bench'], color='grey', linestyle='--', linewidth=1.5, label='Mag 7 Equal-Weighted Index')
     
-    plt.title('Cumulative Outperformance: "Topic Shock" Strategy', fontsize=16)
-    plt.ylabel('Growth of $1')
+    plt.yscale('log') # Log scale essential for 1200x return
+    
+    # Annotate Final Values
+    final_strat = port['cum_strat'].iloc[-1]
+    final_bench = port['cum_bench'].iloc[-1]
+    
+    plt.title(f'Cumulative Growth ($100 Invested): Strategy (${final_strat:,.0f}) vs Benchmark (${final_bench:,.0f})', fontsize=16)
+    plt.ylabel('Portfolio Value ($) [Log Scale]')
     plt.legend(fontsize=12)
-    plt.grid(True, alpha=0.3)
+    plt.grid(True, alpha=0.3, which='both')
+    
     save_plot("cumulative_return_equity.png")
     
     # 2. Rolling Sortino (Better representation)
