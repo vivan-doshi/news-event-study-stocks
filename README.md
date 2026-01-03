@@ -69,8 +69,7 @@ $$ R_{t} - R_{f,t} = \alpha + \sum \beta_{FF}F_{t} + \sum_{k=1}^{K} \beta_{shock
 ├── config/
 │   └── topic_map.csv         # Mapping Topic IDs -> Human Labels
 └── reports/
-    ├── performance_analysis.md # Detailed statistical breakdown
-    └── executive_summary.md    # High-level business overview
+    └── regression_t1/          # Latest T+1 Forecast Analysis (Results & Metrics)
 ```
 
 ---
