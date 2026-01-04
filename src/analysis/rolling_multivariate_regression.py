@@ -77,7 +77,7 @@ def load_data(file_path):
     df['date'] = pd.to_datetime(df['date'])
     return df
 
-def calculate_metrics(y_true, y_pred, model_name):
+def calculate_metrics(y_true, y_pred, model_name, transaction_cost_bps=5.0):
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
     
@@ -95,17 +95,29 @@ def calculate_metrics(y_true, y_pred, model_name):
     # Strategy Return: Position(at close T) * Return(T+1)
     # Note: Transaction costs ignored.
     strategy_ret = position * y_true
+
+    # --- Transaction Costs ---
+    # Turnover is change in position.
+    # Since we don't have the full series context here easily if passing lists, 
+    # we need to assume sequential data.
+    pos_series = pd.Series(position)
+    turnover = pos_series.diff().abs().fillna(0) # First trade cost? Assume 0 or 1. Let's say 0 for simplicity or assume entry.
+    # Actually, if we enter into a position at t=0, that's turnover.
+    # But usually we calculate from t=1.
     
-    # Cumulative Return (for DD)
-    cum_ret = np.cumprod(1 + strategy_ret)
+    cost = turnover * (transaction_cost_bps / 10000.0)
+    net_strategy_ret = strategy_ret - cost.values
+
+    # Cumulative Return (Results)
+    cum_ret = np.cumprod(1 + net_strategy_ret)
     
-    # 1. Sharpe Ratio
-    mean_ret = np.mean(strategy_ret)
-    std_ret = np.std(strategy_ret)
+    # 1. Sharpe Ratio (Net)
+    mean_ret = np.mean(net_strategy_ret)
+    std_ret = np.std(net_strategy_ret)
     sharpe = (mean_ret / std_ret) * np.sqrt(252) if std_ret > 0 else 0
     
-    # 2. Sortino Ratio
-    downside_returns = strategy_ret[strategy_ret < 0]
+    # 2. Sortino Ratio (Net)
+    downside_returns = net_strategy_ret[net_strategy_ret < 0]
     downside_std = np.std(downside_returns)
     sortino = (mean_ret / downside_std) * np.sqrt(252) if downside_std > 0 else 0
     
@@ -115,16 +127,16 @@ def calculate_metrics(y_true, y_pred, model_name):
     max_drawdown = np.min(drawdown)
     
     # 4. Profit Factor
-    gross_profit = np.sum(strategy_ret[strategy_ret > 0])
-    gross_loss = np.abs(np.sum(strategy_ret[strategy_ret < 0]))
+    gross_profit = np.sum(net_strategy_ret[net_strategy_ret > 0])
+    gross_loss = np.abs(np.sum(net_strategy_ret[net_strategy_ret < 0]))
     profit_factor = gross_profit / gross_loss if gross_loss > 0 else 0
     
     return {
         'model': model_name,
         'oos_r2': r2,
         'hit_rate': hit_rate,
-        'sharpe': sharpe,
-        'sortino': sortino,
+        'sharpe': sharpe,     # Now Net Sharpe
+        'sortino': sortino,   # Now Net Sortino
         'profit_factor': profit_factor,
         'max_drawdown': max_drawdown
     }

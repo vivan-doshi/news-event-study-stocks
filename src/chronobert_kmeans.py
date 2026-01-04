@@ -19,12 +19,16 @@ Step 1:
 # ==========================
 
 NEWS_PARQUET_PATH = "data/raw/news_raw_20251031.parquet"
-OUTPUT_PARQUET_PATH = "data/processed/mag7_news_with_topicsV2.parquet"
+OUTPUT_PARQUET_PATH = "data/processed/mag7_news_anchored_topics.parquet"
 SYMBOL_FILTER = ["AAPL.US", "MSFT.US", "AMZN.US", "GOOGL.US", "TSLA.US", "META.US", "NVDA.US"]
 
 N_TOPICS = 50
 MAX_LENGTH = 256
 BATCH_SIZE_EMB = 32
+
+# Anchor date for clustering: Train K-Means on data BEFORE this date.
+# Predict for data AFTER this date.
+TRAIN_CUTOFF_DATE = "2022-01-01"
 
 
 # ==========================
@@ -310,14 +314,34 @@ def main():
     encoder = ChronoBERTEncoder(max_length=MAX_LENGTH, batch_size=BATCH_SIZE_EMB)
     embeddings, df_emb = encoder.encode_dataframe(df)
 
-    topic_ids, kmeans_model = compute_topics_kmeans(
-        embeddings,
-        n_topics=N_TOPICS,
+    # --- ANCHORED CLUSTERING LOGIC ---
+    print(f"[KMEANS] Anchoring topics on data before {TRAIN_CUTOFF_DATE}...")
+    
+    # Identify training mask
+    train_mask = df_emb["published_at"] < str(TRAIN_CUTOFF_DATE)
+    train_embeddings = embeddings[train_mask]
+    
+    if len(train_embeddings) < N_TOPICS * 10:
+        logger.warning(f"[KMEANS] Warning: Few training samples ({len(train_embeddings)}) for {N_TOPICS} topics!")
+    
+    print(f"[KMEANS] Fitting K-Means on {len(train_embeddings)} training samples...")
+    
+    # Fit ONLY on training data
+    kmeans = KMeans(
+        n_clusters=N_TOPICS,
         random_state=42,
+        n_init=10,
     )
+    kmeans.fit(train_embeddings)
+    
+    # Predict for ALL data (past and future)
+    # This ensures consistency: The definition of "Topic 1" is frozen in 2021 logic.
+    print(f"[KMEANS] Predicting topics for full dataset ({len(embeddings)} samples)...")
+    topic_ids = kmeans.predict(embeddings)
+    
     df_emb["topic_id_kmeans"] = topic_ids
 
-    print(f"[KMEANS] Saving news with topics to: {OUTPUT_PARQUET_PATH}")
+    print(f"[KMEANS] Saving news with anchored topics to: {OUTPUT_PARQUET_PATH}")
     df_emb.to_parquet(OUTPUT_PARQUET_PATH, index=False)
 
     print("[KMEANS] Done. Columns include (sample):")
